@@ -1,0 +1,24 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Quick Start Guide"
+  author: "Fonti Kar and Shawn Laffan"
+  date: "9/19/2024"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: zephyr
+  pdf:
+    documentclass: scrreprt
+
+editor: source
+
