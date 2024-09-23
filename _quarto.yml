@@ -3,8 +3,8 @@ project:
   output-dir: docs
 
 book:
-  title: "Quick Start Guide"
-  author: "Fonti Kar and Shawn Laffan"
+  title: "Biodiverse Quick Start Guide"
+  author: "Shawn W Laffan, Giovanni Di Virgilio, Hannah Beaton, Fonti Kar"
   date: "9/19/2024"
   chapters:
     - index.qmd

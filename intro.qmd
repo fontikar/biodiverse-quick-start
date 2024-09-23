@@ -1,9 +1,65 @@
-# Introduction
+# Overview
 
-This is a book created from markdown and executable code.
+### What is Biodiverse? 
 
-See @knuth84 for additional discussion of literate programming.
+Biodiverse is an open source tool for the spatial analysis of diversity using indices based on taxonomic, phylogenetic, matrix and trait-based relationships. Analyses can be run on a wide range of variables that vary across space and/or time whether they are biological, physical or lingual.
 
-```{r}
-1 + 1
-```
+For example, the [diversity distributions of marsupials across Australia], or [variation in rainfall across continental US], even geographic and temporal [distribution of various Mediterranean dialects], can all be analysed with Biodiverse. 
+
+### What analyses can I do with Biodiverse?
+
+You can run a range of spatial analyses, such as: 
+
+- cluster
+- moving window 
+- randomisation analyses
+
+You can also visualise analysis results in interactive diagrams and maps, and optionally export analysis results to a variety of formats (e.g. delimited text, geoTIFF, JSON) to third party software for further analysis, such as ESRI ArcGIS, R and Matlab.
+
+[BiodiverseR](https://github.com/shawnlaffan/BiodiverseR) - an R package to Biodiverse is currently under development to offer the same functionality as the main software
+
+### What is covered in this Quick Start Guide
+
+This Quick Start guide introduces you to the main features of Biodiverse. It draws information from the full range of more extensive [Biodiverse help documentation ](https://github.com/shawnlaffan/biodiverse/wiki)
+
+Specifically we will cover how to do the following in Biodiverse: 
+
+- Importing and exporting data
+- Data visualisation 
+- Cluster analysis
+- Spatial moving window analysis
+- Randomism analysis
+
+The tutorials in this guide use the sample data sets provided in the `Biodiverse/data` folder. 
+
+This guide does not cover all the detailed aspects of Biodiverse functionality, so links to the online [Biodiverse documentation](https://github.com/shawnlaffan/biodiverse/wiki) covering more detailed information are provided throughout.
+
+### Where can I get additional help?
+
+You can access a range of Biodiverse Help Topics by clicking on the Help option on the menu bar within the Biodiverse application 
+
+![](images/image1.png)
+
+You can also hover the mouse pointer over most buttons and menu items in Biodiverse to view their associated tooltips. 
+
+Alternatively, you can post your question at our [Google Group Forum](https://groups.google.com/forum/#!forum/biodiverse-users). We recommend searching through past conversations to see if your question has been raised by others.
+
+
+### Which operating systems does Biodiverse support?
+ 
+Biodiverse is supported on Windows, MacOS and Linux platforms. 
+
+You can install the binary/executable or source code versions of Biodiverse at out [Installation Page](https://github.com/shawnlaffan/biodiverse/wiki/Installation)
+
+The binary/executable is 'all-in-one' which includes the analysis engine + GUI. 
+
+If you just want the analysis engine only, follow the installation instructions for the source code version. 
+
+### What programming language is Biodiverse developed in?
+
+Biodiverse - the software itself comes in two parts: 
+
+- an analysis engine, which is written in [Pprl](https://www.perl.org/) 
+- a graphic user interface (GUI) which is developed using [Gtk2](https://www.gtk.org/) 
+
+
