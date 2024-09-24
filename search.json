@@ -10,13 +10,83 @@
     ]
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Overview",
+    "objectID": "overview.html",
+    "href": "overview.html",
+    "title": "1  Overview of Biodiverse",
     "section": "",
-    "text": "1.0.1 What is Biodiverse?\nBiodiverse is an open source tool for the spatial analysis of diversity using indices based on taxonomic, phylogenetic, matrix and trait-based relationships. Analyses can be run on a wide range of variables that vary across space and/or time whether they are biological, physical or lingual.\nFor example, the [diversity distributions of marsupials across Australia], or [variation in rainfall across continental US], even geographic and temporal [distribution of various Mediterranean dialects], can all be analysed with Biodiverse.\n\n\n1.0.2 What analyses can I do with Biodiverse?\nYou can run a range of spatial analyses, such as:\n\ncluster\nmoving window\nrandomisation analyses\n\nYou can also visualise analysis results in interactive diagrams and maps, and optionally export analysis results to a variety of formats (e.g. delimited text, geoTIFF, JSON) to third party software for further analysis, such as ESRI ArcGIS, R and Matlab.\nBiodiverseR - an R package to Biodiverse is currently under development to offer the same functionality as the main software\n\n\n1.0.3 What is covered in this Quick Start Guide\nThis Quick Start guide introduces you to the main features of Biodiverse. It draws information from the full range of more extensive Biodiverse help documentation\nSpecifically we will cover how to do the following in Biodiverse:\n\nImporting and exporting data\nData visualisation\nCluster analysis\nSpatial moving window analysis\nRandomism analysis\n\nThe tutorials in this guide use the sample data sets provided in the Biodiverse/data folder.\nThis guide does not cover all the detailed aspects of Biodiverse functionality, so links to the online Biodiverse documentation covering more detailed information are provided throughout.\n\n\n1.0.4 Where can I get additional help?\nYou can access a range of Biodiverse Help Topics by clicking on the Help option on the menu bar within the Biodiverse application\n\nYou can also hover the mouse pointer over most buttons and menu items in Biodiverse to view their associated tooltips.\nAlternatively, you can post your question at our Google Group Forum. We recommend searching through past conversations to see if your question has been raised by others.\n\n\n1.0.5 Which operating systems does Biodiverse support?\nBiodiverse is supported on Windows, MacOS and Linux platforms.\nYou can install the binary/executable or source code versions of Biodiverse at out Installation Page\nThe binary/executable is ‘all-in-one’ which includes the analysis engine + GUI.\nIf you just want the analysis engine only, follow the installation instructions for the source code version.\n\n\n1.0.6 What programming language is Biodiverse developed in?\nBiodiverse - the software itself comes in two parts:\n\nan analysis engine, which is written in Pprl\na graphic user interface (GUI) which is developed using Gtk2",
+    "text": "1.1 What is Biodiverse\nBiodiverse is an open source tool for the spatial analysis of diversity using indices based on taxonomic, phylogenetic, matrix and trait-based relationships. Analyses can be run on a wide range of variables that vary across space and/or time whether they are biological, physical or lingual.\nFor example, the diversity distributions of marsupials across Australia, or variation in rainfall across continental US, even geographic distribution of indigenious dialects, can all be analysed with Biodiverse.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview of Biodiverse</span>"
+    ]
+  },
+  {
+    "objectID": "overview.html#what-is-biodiverse",
+    "href": "overview.html#what-is-biodiverse",
+    "title": "1  Overview of Biodiverse",
+    "section": "",
+    "text": "1.1.1 What is covered in this Quick Start Guide\nThis Quick Start guide introduces you to the main features of Biodiverse. It draws information from the full range of more extensive Biodiverse help documentation\nSpecifically we will cover how to do the following in Biodiverse:\n\nImporting and exporting data\nData visualisation\nCluster analysis\nSpatial moving window analysis\nRandomism analysis\n\nThe tutorials in this guide use the sample data sets provided in the Biodiverse/data folder.\nThis guide does not cover all the detailed aspects of Biodiverse functionality, so links to the online Biodiverse documentation covering more detailed information are provided throughout.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview of Biodiverse</span>"
+    ]
+  },
+  {
+    "objectID": "overview.html#what-analyses-can-i-do-with-biodiverse",
+    "href": "overview.html#what-analyses-can-i-do-with-biodiverse",
+    "title": "1  Overview of Biodiverse",
+    "section": "1.2 What analyses can I do with Biodiverse?",
+    "text": "1.2 What analyses can I do with Biodiverse?\nYou can run a range of spatial analyses, such as:\n\ncluster\nmoving window\nrandomisation analyses\n\nYou can also visualise analysis results in interactive diagrams and maps, and optionally export analysis results to a variety of formats (e.g. delimited text, geoTIFF, JSON) to third party software for further analysis, such as ESRI ArcGIS, R and Matlab.\nBiodiverseR - an R package to Biodiverse is currently under development to offer the same functionality as the main software",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview of Biodiverse</span>"
+    ]
+  },
+  {
+    "objectID": "overview.html#where-can-i-get-additional-help",
+    "href": "overview.html#where-can-i-get-additional-help",
+    "title": "1  Overview of Biodiverse",
+    "section": "1.3 Where can I get additional help?",
+    "text": "1.3 Where can I get additional help?\nYou can access a range of Biodiverse Help Topics by clicking on the Help option on the menu bar within the Biodiverse application\n\nYou can also hover the mouse pointer over most buttons and menu items in Biodiverse to view their associated tooltips.\nAlternatively, you can post your question at our Google Group Forum. We recommend searching through past conversations to see if your question has been raised by others.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview of Biodiverse</span>"
+    ]
+  },
+  {
+    "objectID": "overview.html#which-operating-systems-does-biodiverse-support",
+    "href": "overview.html#which-operating-systems-does-biodiverse-support",
+    "title": "1  Overview of Biodiverse",
+    "section": "1.4 Which operating systems does Biodiverse support?",
+    "text": "1.4 Which operating systems does Biodiverse support?\nBiodiverse is supported on Windows, MacOS and Linux platforms.\nYou can install the binary/executable or source code versions of Biodiverse at out Installation Page\nThe binary/executable is ‘all-in-one’ which includes the analysis engine + GUI.\nIf you just want the analysis engine only, follow the installation instructions for the source code version.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview of Biodiverse</span>"
+    ]
+  },
+  {
+    "objectID": "overview.html#what-programming-language-is-biodiverse-developed-in",
+    "href": "overview.html#what-programming-language-is-biodiverse-developed-in",
+    "title": "1  Overview of Biodiverse",
+    "section": "1.5 What programming language is Biodiverse developed in?",
+    "text": "1.5 What programming language is Biodiverse developed in?\nBiodiverse - the software itself comes in two parts:\n\nan analysis engine, which is written in Pprl\na graphic user interface (GUI) which is developed using Gtk2",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview of Biodiverse</span>"
+    ]
+  },
+  {
+    "objectID": "overview.html#how-do-i-install-biodiverse",
+    "href": "overview.html#how-do-i-install-biodiverse",
+    "title": "1  Overview of Biodiverse",
+    "section": "1.6 How do I install Biodiverse?",
+    "text": "1.6 How do I install Biodiverse?\nFollow the Installation instructions webpage for your selected version.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview of Biodiverse</span>"
+    ]
+  },
+  {
+    "objectID": "overview.html#key-terminology",
+    "href": "overview.html#key-terminology",
+    "title": "1  Overview of Biodiverse",
+    "section": "1.7 Key terminology",
+    "text": "1.7 Key terminology\nThe two concepts below are important when using Biodiverse. For details of a fuller list of Biodiverse terminology, see the Data Structures page.\n\n1.7.1 Labels\nTypically labels represent species, but in reality they can be any named entity that is then aggregated, or ‘binned’, into a Group. Hence, an individual label could also represent other taxonomic levels, e.g. a genus, or distinct entities from other phenomena, such as lithological classes (e.g. different rock types) or linguistic structures (e.g. different phonemes).\n\n\n1.7.2 Groups\nGroups are cells into which the labels are aggregated (binned). These are usually square, but can represent any number of axes (x, y, z, time, population-ID, …) with differing cell sizes (resolutions) and numeric or text types. The groups are plotted in the interactive maps that Biodiverse produces as outputs of data visualisation and spatial analyses, as in the example below. Groups are also integral to the spatial components of the moving window, cluster and randomisation analyses.\nPlease note however, that group coordinates are in the same coordinate system (map projection) as the input data. If you have input data in multiple files, with differing coordinate systems, then you can use GIS or other geospatial tools such as the sf library in R to project them into a common system.\n\nThe ‘Groups’ are the square cells representing the Australian mainland.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview of Biodiverse</span>"
     ]
   }
 ]
