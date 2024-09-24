@@ -130,13 +130,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-is-biodiverse" id="toc-what-is-biodiverse" class="nav-link active" data-scroll-target="#what-is-biodiverse"><span class="header-section-number">1.1</span> What is Biodiverse</a></li>
+  <li><a href="#what-is-biodiverse" id="toc-what-is-biodiverse" class="nav-link active" data-scroll-target="#what-is-biodiverse"><span class="header-section-number">1.1</span> What is Biodiverse</a>
+  <ul class="collapse">
+  <li><a href="#what-is-covered-in-this-quick-start-guide" id="toc-what-is-covered-in-this-quick-start-guide" class="nav-link" data-scroll-target="#what-is-covered-in-this-quick-start-guide"><span class="header-section-number">1.1.1</span> What is covered in this Quick Start Guide</a></li>
+  </ul></li>
   <li><a href="#what-analyses-can-i-do-with-biodiverse" id="toc-what-analyses-can-i-do-with-biodiverse" class="nav-link" data-scroll-target="#what-analyses-can-i-do-with-biodiverse"><span class="header-section-number">1.2</span> What analyses can I do with Biodiverse?</a></li>
-  <li><a href="#what-programming-language-is-biodiverse-developed-in" id="toc-what-programming-language-is-biodiverse-developed-in" class="nav-link" data-scroll-target="#what-programming-language-is-biodiverse-developed-in"><span class="header-section-number">1.3</span> What programming language is Biodiverse developed in?</a></li>
+  <li><a href="#where-can-i-get-additional-help" id="toc-where-can-i-get-additional-help" class="nav-link" data-scroll-target="#where-can-i-get-additional-help"><span class="header-section-number">1.3</span> Where can I get additional help?</a></li>
   <li><a href="#which-operating-systems-does-biodiverse-support" id="toc-which-operating-systems-does-biodiverse-support" class="nav-link" data-scroll-target="#which-operating-systems-does-biodiverse-support"><span class="header-section-number">1.4</span> Which operating systems does Biodiverse support?</a></li>
-  <li><a href="#how-do-i-install-biodiverse" id="toc-how-do-i-install-biodiverse" class="nav-link" data-scroll-target="#how-do-i-install-biodiverse"><span class="header-section-number">1.5</span> How do I install Biodiverse?</a></li>
-  <li><a href="#using-this-guide" id="toc-using-this-guide" class="nav-link" data-scroll-target="#using-this-guide"><span class="header-section-number">1.6</span> Using this guide</a></li>
-  <li><a href="#where-can-i-get-additional-help" id="toc-where-can-i-get-additional-help" class="nav-link" data-scroll-target="#where-can-i-get-additional-help"><span class="header-section-number">1.7</span> Where can I get additional help?</a></li>
+  <li><a href="#what-programming-language-is-biodiverse-developed-in" id="toc-what-programming-language-is-biodiverse-developed-in" class="nav-link" data-scroll-target="#what-programming-language-is-biodiverse-developed-in"><span class="header-section-number">1.5</span> What programming language is Biodiverse developed in?</a></li>
+  <li><a href="#how-do-i-install-biodiverse" id="toc-how-do-i-install-biodiverse" class="nav-link" data-scroll-target="#how-do-i-install-biodiverse"><span class="header-section-number">1.6</span> How do I install Biodiverse?</a></li>
+  <li><a href="#using-this-guide" id="toc-using-this-guide" class="nav-link" data-scroll-target="#using-this-guide"><span class="header-section-number">1.7</span> Using this guide</a></li>
   <li><a href="#some-key-terminology" id="toc-some-key-terminology" class="nav-link" data-scroll-target="#some-key-terminology"><span class="header-section-number">1.8</span> Some key terminology</a>
   <ul class="collapse">
   <li><a href="#labels" id="toc-labels" class="nav-link" data-scroll-target="#labels"><span class="header-section-number">1.8.1</span> Labels</a></li>
@@ -169,33 +172,62 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="what-is-biodiverse" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="what-is-biodiverse"><span class="header-section-number">1.1</span> What is Biodiverse</h2>
-<p>Biodiverse is a free tool for the spatial analysis of diversity using indices based on taxonomic, phylogenetic, matrix and trait-based relationships. Analyses can be run on a wide range of variables that vary across space and/or time, whether they are biological (e.g., diversity distributions of marsupials across Australia), physical (e.g., variation in rainfall across continental US), or other systems (e.g., geographic and temporal distribution of various Mediterranean dialects).</p>
+<p>Biodiverse is an open source tool for the spatial analysis of diversity using indices based on taxonomic, phylogenetic, matrix and trait-based relationships. Analyses can be run on a wide range of variables that vary across space and/or time whether they are biological, physical or lingual.</p>
+<p>For example, the <a href="https://doi.org/10.1080/13658816.2012.717627">diversity distributions of marsupials across Australia</a>, or variation in rainfall across continental US, even geographic <a href="https://doi.org/10.1111/j.1467-968X.2008.00209.x">distribution of indigenious dialects</a>, can all be analysed with Biodiverse.</p>
+<section id="what-is-covered-in-this-quick-start-guide" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="what-is-covered-in-this-quick-start-guide"><span class="header-section-number">1.1.1</span> What is covered in this Quick Start Guide</h3>
+<p>This Quick Start guide introduces you to the main features of Biodiverse. It draws information from the full range of more extensive <a href="https://github.com/shawnlaffan/biodiverse/wiki">Biodiverse help documentation</a></p>
+<p>Specifically we will cover how to do the following in Biodiverse:</p>
+<ul>
+<li>Importing and exporting data</li>
+<li>Data visualisation</li>
+<li>Cluster analysis</li>
+<li>Spatial moving window analysis</li>
+<li>Randomism analysis</li>
+</ul>
+<p>The tutorials in this guide use the sample data sets provided in the <code>Biodiverse/data</code> folder.</p>
+<p>This guide does not cover all the detailed aspects of Biodiverse functionality, so links to the online <a href="https://github.com/shawnlaffan/biodiverse/wiki">Biodiverse documentation</a> covering more detailed information are provided throughout.</p>
+</section>
 </section>
 <section id="what-analyses-can-i-do-with-biodiverse" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="what-analyses-can-i-do-with-biodiverse"><span class="header-section-number">1.2</span> What analyses can I do with Biodiverse?</h2>
-<p>You can run a range of spatial analyses, such as cluster, moving window and randomisation analyses, visualise analysis results in interactive diagrams and maps, and optionally export analysis results to a variety of formats (e.g.&nbsp;delimited text, geoTIFF, JSON) to third party software for further analysis, such as ESRI ArcGIS, R and Matlab.</p>
+<p>You can run a range of spatial analyses, such as:</p>
+<ul>
+<li>cluster</li>
+<li>moving window</li>
+<li>randomisation analyses</li>
+</ul>
+<p>You can also visualise analysis results in interactive diagrams and maps, and optionally export analysis results to a variety of formats (e.g.&nbsp;delimited text, geoTIFF, JSON) to third party software for further analysis, such as ESRI ArcGIS, R and Matlab.</p>
+<p><a href="https://github.com/shawnlaffan/BiodiverseR">BiodiverseR</a> - an R package to Biodiverse is currently under development to offer the same functionality as the main software</p>
 </section>
-<section id="what-programming-language-is-biodiverse-developed-in" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="what-programming-language-is-biodiverse-developed-in"><span class="header-section-number">1.3</span> What programming language is Biodiverse developed in?</h2>
-<p>Biodiverse is written in the <a href="https://www.perl.org/">Perl programming language</a>. There are two parts: an analysis engine, which can be scripted using perl code, and a GUI which is developed using <a href="https://www.gtk.org/">Gtk2</a> and which calls the analytical engine.</p>
+<section id="where-can-i-get-additional-help" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="where-can-i-get-additional-help"><span class="header-section-number">1.3</span> Where can I get additional help?</h2>
+<p>You can access a range of Biodiverse Help Topics by clicking on the Help option on the menu bar within the Biodiverse application</p>
+<p><img src="images/image1.png" class="img-fluid"></p>
+<p>You can also hover the mouse pointer over most buttons and menu items in Biodiverse to view their associated tooltips.</p>
+<p>Alternatively, you can post your question at our <a href="https://groups.google.com/forum/#!forum/biodiverse-users">Google Group Forum</a>. We recommend searching through past conversations to see if your question has been raised by others.</p>
 </section>
 <section id="which-operating-systems-does-biodiverse-support" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="which-operating-systems-does-biodiverse-support"><span class="header-section-number">1.4</span> Which operating systems does Biodiverse support?</h2>
-<p>You can install and run binary and source code versions of Biodiverse on Windows, MacOS and Linux platforms. The analysis engine is also tested on the FreeBSD OS and source code installations can be used on that platform. Visit the Biodiverse <a href="https://github.com/shawnlaffan/biodiverse/wiki/Downloads">Downloads</a> page to obtain the version of Biodiverse you wish to install.</p>
+<p>Biodiverse is supported on Windows, MacOS and Linux platforms.</p>
+<p>You can install the binary/executable or source code versions of Biodiverse at out <a href="https://github.com/shawnlaffan/biodiverse/wiki/Installation">Installation Page</a></p>
+<p>The binary/executable is ‘all-in-one’ which includes the analysis engine + GUI.</p>
+<p>If you just want the analysis engine only, follow the installation instructions for the source code version.</p>
 </section>
-<section id="how-do-i-install-biodiverse" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="how-do-i-install-biodiverse"><span class="header-section-number">1.5</span> How do I install Biodiverse?</h2>
+<section id="what-programming-language-is-biodiverse-developed-in" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="what-programming-language-is-biodiverse-developed-in"><span class="header-section-number">1.5</span> What programming language is Biodiverse developed in?</h2>
+<p>Biodiverse - the software itself comes in two parts:</p>
+<ul>
+<li>an analysis engine, which is written in <a href="https://www.perl.org/">Pprl</a></li>
+<li>a graphic user interface (GUI) which is developed using <a href="https://www.gtk.org/">Gtk2</a></li>
+</ul>
+</section>
+<section id="how-do-i-install-biodiverse" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="how-do-i-install-biodiverse"><span class="header-section-number">1.6</span> How do I install Biodiverse?</h2>
 <p>Follow the <a href="https://github.com/shawnlaffan/biodiverse/wiki/Installation">Installation</a> instructions webpage for your selected version.</p>
 </section>
-<section id="using-this-guide" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="using-this-guide"><span class="header-section-number">1.6</span> Using this guide</h2>
-</section>
-<section id="where-can-i-get-additional-help" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="where-can-i-get-additional-help"><span class="header-section-number">1.7</span> Where can I get additional help?</h2>
-<p>You can access a range of Biodiverse Help Topics by clicking on the Help option on the menu bar within the Biodiverse application (see images/image below). You can also hover the mouse pointer over most buttons and menu items in Biodiverse to view their associated tooltips.</p>
-<p>This guide does not cover all the detailed aspects of Biodiverse functionality, so links to the online Biodiverse documentation covering more detailed information are provided throughout. Alternatively, visit the <a href="http://shawnlaffan.github.io/biodiverse/">Biodiverse Project Home</a> for more extensive software documentation.</p>
-<p>You can also send questions to the Biodiverse discussion forum at <a href="https://github.com/shawnlaffan/biodiverse/discussions">https://github.com/shawnlaffan/biodiverse/discussions</a> or at <a href="https://groups.google.com/forum/#!forum/biodiverse-users">https://groups.google.com/forum/#!forum/biodiverse-users</a>. We welcome any queries, comments or feedback.</p>
-<p><img src="images/image1.png" class="img-fluid"></p>
+<section id="using-this-guide" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="using-this-guide"><span class="header-section-number">1.7</span> Using this guide</h2>
 </section>
 <section id="some-key-terminology" class="level2" data-number="1.8">
 <h2 data-number="1.8" class="anchored" data-anchor-id="some-key-terminology"><span class="header-section-number">1.8</span> Some key terminology</h2>
