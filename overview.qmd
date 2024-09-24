@@ -66,20 +66,19 @@ Biodiverse - the software itself comes in two parts:
 
 Follow the [Installation](https://github.com/shawnlaffan/biodiverse/wiki/Installation) instructions webpage for your selected version.
 
-## Some key terminology
+## Key terminology
 
 The two concepts below are important when using Biodiverse. For details of a fuller list of Biodiverse terminology, see the [Data Structures](https://github.com/shawnlaffan/biodiverse/wiki/DataStructures) page. 
 
 ### Labels 
 
-Typically labels represent species, but in reality they can be any named entity that is then aggregated, or ‘binned’, into a [Group](#1.8.2-groups). Hence, an individual label could also represent other taxonomic levels, e.g. a genus, or distinct entities from other phenomena, such as lithological classes (e.g. different rock types) or linguistic structures (e.g. different phonemes).
+Typically labels represent species, but in reality they can be any named entity that is then aggregated, or ‘binned’, into a Group. Hence, an individual label could also represent other taxonomic levels, e.g. a genus, or distinct entities from other phenomena, such as lithological classes (e.g. different rock types) or linguistic structures (e.g. different phonemes).
 
 ### Groups
 
 Groups are cells into which the labels are aggregated (binned). These are usually square, but can represent any number of axes (x, y, z, time, population-ID, …) with differing cell sizes (resolutions) and numeric or text types. The groups are plotted in the interactive maps that Biodiverse produces as outputs of data visualisation and spatial analyses, as in the example below. Groups are also integral to the spatial components of the moving window, cluster and randomisation analyses. 
 
 Please note however, that group coordinates are in the same coordinate system (map projection) as the input data. If you have input data in multiple files, with differing coordinate systems, then you can use GIS or other geospatial tools such as the sf library in R to project them into a common system.
-
 
 ![](images/image2)
 
