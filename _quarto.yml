@@ -2,6 +2,8 @@ project:
   type: book
   output-dir: docs
 
+# https://quarto.org/docs/reference/projects/books.html
+
 book:
   title: "Biodiverse Quick Start Guide"
   author: "Shawn W Laffan, Giovanni Di Virgilio, Hannah Beaton, Fonti Kar"
@@ -9,16 +11,17 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
-    - references.qmd
-
-bibliography: references.bib
+    # - references.qmd
+  output-file: "Biodiverse-Quick-Start-Guide"
+  downloads: [pdf]
 
 format:
   html:
     theme: zephyr
   pdf:
-    documentclass: scrreprt
+    toc: true
+    toc-depth: 1
 
+# bibliography: references.bib
 editor: source
 
