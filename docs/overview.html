@@ -139,11 +139,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#which-operating-systems-does-biodiverse-support" id="toc-which-operating-systems-does-biodiverse-support" class="nav-link" data-scroll-target="#which-operating-systems-does-biodiverse-support"><span class="header-section-number">1.4</span> Which operating systems does Biodiverse support?</a></li>
   <li><a href="#what-programming-language-is-biodiverse-developed-in" id="toc-what-programming-language-is-biodiverse-developed-in" class="nav-link" data-scroll-target="#what-programming-language-is-biodiverse-developed-in"><span class="header-section-number">1.5</span> What programming language is Biodiverse developed in?</a></li>
   <li><a href="#how-do-i-install-biodiverse" id="toc-how-do-i-install-biodiverse" class="nav-link" data-scroll-target="#how-do-i-install-biodiverse"><span class="header-section-number">1.6</span> How do I install Biodiverse?</a></li>
-  <li><a href="#using-this-guide" id="toc-using-this-guide" class="nav-link" data-scroll-target="#using-this-guide"><span class="header-section-number">1.7</span> Using this guide</a></li>
-  <li><a href="#some-key-terminology" id="toc-some-key-terminology" class="nav-link" data-scroll-target="#some-key-terminology"><span class="header-section-number">1.8</span> Some key terminology</a>
+  <li><a href="#key-terminology" id="toc-key-terminology" class="nav-link" data-scroll-target="#key-terminology"><span class="header-section-number">1.7</span> Key terminology</a>
   <ul class="collapse">
-  <li><a href="#labels" id="toc-labels" class="nav-link" data-scroll-target="#labels"><span class="header-section-number">1.8.1</span> Labels</a></li>
-  <li><a href="#groups" id="toc-groups" class="nav-link" data-scroll-target="#groups"><span class="header-section-number">1.8.2</span> Groups</a></li>
+  <li><a href="#labels" id="toc-labels" class="nav-link" data-scroll-target="#labels"><span class="header-section-number">1.7.1</span> Labels</a></li>
+  <li><a href="#groups" id="toc-groups" class="nav-link" data-scroll-target="#groups"><span class="header-section-number">1.7.2</span> Groups</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -226,18 +225,15 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="1.6" class="anchored" data-anchor-id="how-do-i-install-biodiverse"><span class="header-section-number">1.6</span> How do I install Biodiverse?</h2>
 <p>Follow the <a href="https://github.com/shawnlaffan/biodiverse/wiki/Installation">Installation</a> instructions webpage for your selected version.</p>
 </section>
-<section id="using-this-guide" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="using-this-guide"><span class="header-section-number">1.7</span> Using this guide</h2>
-</section>
-<section id="some-key-terminology" class="level2" data-number="1.8">
-<h2 data-number="1.8" class="anchored" data-anchor-id="some-key-terminology"><span class="header-section-number">1.8</span> Some key terminology</h2>
+<section id="key-terminology" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="key-terminology"><span class="header-section-number">1.7</span> Key terminology</h2>
 <p>The two concepts below are important when using Biodiverse. For details of a fuller list of Biodiverse terminology, see the <a href="https://github.com/shawnlaffan/biodiverse/wiki/DataStructures">Data Structures</a> page.</p>
-<section id="labels" class="level3" data-number="1.8.1">
-<h3 data-number="1.8.1" class="anchored" data-anchor-id="labels"><span class="header-section-number">1.8.1</span> Labels</h3>
-<p>Typically labels represent species, but in reality they can be any named entity that is then aggregated, or ‘binned’, into a <a href="#1.8.2-groups">Group</a>. Hence, an individual label could also represent other taxonomic levels, e.g.&nbsp;a genus, or distinct entities from other phenomena, such as lithological classes (e.g.&nbsp;different rock types) or linguistic structures (e.g.&nbsp;different phonemes).</p>
+<section id="labels" class="level3" data-number="1.7.1">
+<h3 data-number="1.7.1" class="anchored" data-anchor-id="labels"><span class="header-section-number">1.7.1</span> Labels</h3>
+<p>Typically labels represent species, but in reality they can be any named entity that is then aggregated, or ‘binned’, into a Group. Hence, an individual label could also represent other taxonomic levels, e.g.&nbsp;a genus, or distinct entities from other phenomena, such as lithological classes (e.g.&nbsp;different rock types) or linguistic structures (e.g.&nbsp;different phonemes).</p>
 </section>
-<section id="groups" class="level3" data-number="1.8.2">
-<h3 data-number="1.8.2" class="anchored" data-anchor-id="groups"><span class="header-section-number">1.8.2</span> Groups</h3>
+<section id="groups" class="level3" data-number="1.7.2">
+<h3 data-number="1.7.2" class="anchored" data-anchor-id="groups"><span class="header-section-number">1.7.2</span> Groups</h3>
 <p>Groups are cells into which the labels are aggregated (binned). These are usually square, but can represent any number of axes (x, y, z, time, population-ID, …) with differing cell sizes (resolutions) and numeric or text types. The groups are plotted in the interactive maps that Biodiverse produces as outputs of data visualisation and spatial analyses, as in the example below. Groups are also integral to the spatial components of the moving window, cluster and randomisation analyses.</p>
 <p>Please note however, that group coordinates are in the same coordinate system (map projection) as the input data. If you have input data in multiple files, with differing coordinate systems, then you can use GIS or other geospatial tools such as the sf library in R to project them into a common system.</p>
 <p><img src="images/image2.png" class="img-fluid"></p>

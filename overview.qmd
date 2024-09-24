@@ -80,6 +80,6 @@ Groups are cells into which the labels are aggregated (binned). These are usuall
 
 Please note however, that group coordinates are in the same coordinate system (map projection) as the input data. If you have input data in multiple files, with differing coordinate systems, then you can use GIS or other geospatial tools such as the sf library in R to project them into a common system.
 
-![](images/image2)
+![](images/image2.png)
 
 The ‘Groups’ are the square cells representing the Australian mainland.
