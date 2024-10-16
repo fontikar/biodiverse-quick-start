@@ -1,0 +1,9 @@
+---
+title: "Acknowledgements"
+---
+
+## **Acknowledgements** {#acknowledgements}
+
+Dr Israel Borokini provided very useful comments to clarify the document 
+
+[^1]:  Details of the format used are in this blog post: [https://biodiverse-analysis-software.blogspot.com/2016/08/new-more-efficient-file-format.html](https://biodiverse-analysis-software.blogspot.com/2016/08/new-more-efficient-file-format.html) 

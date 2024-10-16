@@ -1,0 +1,10 @@
+---
+title: "Summary"
+---
+# **Summary**  {#summary}
+
+The above is a very short and simplified introduction to what Biodiverse can do.  As noted a few times already, if you would like more details then please start a discussion at [https://github.com/shawnlaffan/biodiverse/discussions](https://github.com/shawnlaffan/biodiverse/discussions)  or post a question at [https://groups.google.com/forum/\#\!forum/biodiverse-users](https://groups.google.com/forum/#!forum/biodiverse-users) 
+
+It is also useful to check the blog for other updates and tips about functionality.  It can be accessed through [http://biodiverse-analysis-software.blogspot.com.au/](http://biodiverse-analysis-software.blogspot.com.au/) 
+
+The [main help system](https://github.com/shawnlaffan/biodiverse/wiki/) can also be checked.  There is always work to do on this and any contributions, for example new text or suggestions of things to add/clarify, are welcome.
