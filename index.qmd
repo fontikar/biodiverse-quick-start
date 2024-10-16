@@ -1,7 +1,7 @@
-# [**A tool for the spatial analysis of biological and related diversity**](http://shawnlaffan.github.io/biodiverse/)
-
-**Quick Start Guide**   
+# **Quick Start Guide**   
 **Version 4.0**
+
+[**A tool for the spatial analysis of biological and related diversity**](http://shawnlaffan.github.io/biodiverse/)
 
 **Shawn W Laffan, Giovanni Di Virgilio & Hannah Beaton**  
 **Dec 2022**

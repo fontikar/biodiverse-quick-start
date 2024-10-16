@@ -10,8 +10,15 @@ book:
   date: "9/19/2024"
   chapters:
     - index.qmd
-    - overview.qmd
-    # - references.qmd
+    - 1-overview.qmd
+    - 2-starting.qmd
+    - 3-import.qmd
+    - 4-visualise.qmd
+    - 5-data-analysis.qmd
+    - 6-export.qmd
+    - 7-summary.qmd
+    - 8-acknowledgements.qmd
+    - 9-references.qmd
   output-file: "Biodiverse-Quick-Start-Guide"
   downloads: [pdf]
 
