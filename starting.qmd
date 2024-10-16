@@ -1,0 +1,26 @@
+---
+title: "Starting Biodiverse"
+---
+
+2. # **Starting Biodiverse** {#starting-biodiverse}
+
+Note that the first time you run the binary version it will take a little while before you see anything.  This is because it is unpacking all the files into your temp directory (folder on Windows).  Subsequent runs will be much faster as no unpacking is needed, but be aware that if you have tools that regularly clean your temp folders then the files will be deleted.  
+
+## **2.1 Windows** {#2.1-windows}
+
+If you’ve installed the Binary version of Biodiverse, start the program by double clicking on BiodiverseGUI.exe in the Biodiverse installation folder (wherever you unzipped it).  
+
+If you have installed the source code version then you can double click the BiodiverseGUI.bat file in the Biodiverse installation folder.
+
+## **2.2 Linux and MacOS** {#2.2-linux-and-macos}
+
+On Linux, the binary version of Biodiverse can be run by double clicking on BiodiverseGUI.  On MacOS the installation process allows you to dock it, in which case you open it like any other application.  
+
+To run the source code version of Biodiverse, open a terminal window and change directory to the biodiverse/bin folder. If it is in your home folder and called biodiverse then type:   
+cd \~/biodiverse/bin
+
+Once you have done this, type the following command to open Biodiverse.   
+perl BiodiverseGUI.pl
+
+Alternately you can use the full path, e.g.:  
+perl \~/biodiverse/bin/BiodiverseGUI.pl
