@@ -18,7 +18,7 @@ book:
     - 6-export.qmd
     - 7-summary.qmd
     - 8-acknowledgements.qmd
-    - 9-references.qmd
+    # - 9-references.qmd
   output-file: "Biodiverse-Quick-Start-Guide"
   downloads: [pdf]
 
