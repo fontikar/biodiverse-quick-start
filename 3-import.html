@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Shawn W Laffan, Giovanni Di Virgilio, Hannah Beaton, Fonti Kar">
-<meta name="dcterms.date" content="2024-09-19">
 
-<title>Biodiverse Quick Start Guide</title>
+<title>4&nbsp; Importing Data – Biodiverse Quick Start Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./1-overview.html" rel="next">
+<link href="./4-visualise.html" rel="next">
+<link href="./2-starting.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -82,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>Quick Start Guide</strong></span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3-import.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Importing Data</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -112,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>Quick Start Guide</strong></span></span></a>
   </div>
 </li>
@@ -130,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./3-import.html" class="sidebar-item-text sidebar-link">
+  <a href="./3-import.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Importing Data</span></span></a>
   </div>
 </li>
@@ -174,7 +173,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#quick-start-guide" id="toc-quick-start-guide" class="nav-link active" data-scroll-target="#quick-start-guide"><span class="header-section-number">1</span> <strong>Quick Start Guide</strong></a></li>
+  <li><a href="#3.1-data-structures" id="toc-3.1-data-structures" class="nav-link active" data-scroll-target="#3.1-data-structures"><span class="header-section-number">5.1</span> <strong>3.1 Data structures</strong></a></li>
+  <li><a href="#3.2-opening-data" id="toc-3.2-opening-data" class="nav-link" data-scroll-target="#3.2-opening-data"><span class="header-section-number">5.2</span> <strong>3.2 Opening data</strong></a></li>
+  <li><a href="#3.3-importing-data" id="toc-3.3-importing-data" class="nav-link" data-scroll-target="#3.3-importing-data"><span class="header-section-number">5.3</span> <strong>3.3 Importing data</strong></a>
+  <ul class="collapse">
+  <li><a href="#3.3.1-basedata" id="toc-3.3.1-basedata" class="nav-link" data-scroll-target="#3.3.1-basedata"><span class="header-section-number">5.3.1</span> <strong>3.3.1 BaseData</strong></a></li>
+  <li><a href="#3.3.2-matrices" id="toc-3.3.2-matrices" class="nav-link" data-scroll-target="#3.3.2-matrices"><span class="header-section-number">5.3.2</span> <strong>3.3.2 Matrices</strong></a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"><span class="header-section-number">5.3.3</span> </a></li>
+  <li><a href="#3.3.3-trees" id="toc-3.3.3-trees" class="nav-link" data-scroll-target="#3.3.3-trees"><span class="header-section-number">5.3.4</span> <strong>3.3.3 Trees</strong></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -183,26 +190,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Biodiverse Quick Start Guide</h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Importing Data</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Shawn W Laffan, Giovanni Di Virgilio, Hannah Beaton, Fonti Kar </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 19, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -212,19 +207,151 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="quick-start-guide" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> <strong>Quick Start Guide</strong></h1>
-<p><strong>Version 4.0</strong></p>
-<p><a href="http://shawnlaffan.github.io/biodiverse/"><strong>A tool for the spatial analysis of biological and related diversity</strong></a></p>
-<p><strong>Shawn W Laffan, Giovanni Di Virgilio &amp; Hannah Beaton</strong><br>
-<strong>Dec 2022</strong></p>
-<p>This document is an update of the 2018 version.</p>
-<p>There is also a blog that provides updates and tips about functionality. It can be accessed through <a href="http://biodiverse-analysis-software.blogspot.com.au/">http://biodiverse-analysis-software.blogspot.com.au/</a></p>
-<p>If you have question about the software then please start a discussion at <a href="https://github.com/shawnlaffan/biodiverse/discussions">https://github.com/shawnlaffan/biodiverse/discussions</a> or post a question at <a href="https://groups.google.com/forum/#!forum/biodiverse-users">https://groups.google.com/forum/#!forum/biodiverse-users</a></p>
-<p>![][image1]<br>
-This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>
+<ol start="3" type="1">
+<li><h1 id="open-or-import-data" data-number="5"><span class="header-section-number">5</span> <strong>Open or import data</strong></h1></li>
+</ol>
+<p>Note: If all your files are in the same location then you can set the working directory under the File menu to save time finding them. You can also bookmark folders in the file selector to get back to them more easily. Right click on a folder to see the option.</p>
+<section id="3.1-data-structures" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="3.1-data-structures"><span class="header-section-number">5.1</span> <strong>3.1 Data structures</strong></h2>
+<p>Before importing data it is important to understand the sorts of data supported by Biodiverse. There are four main types, each of which can be stored in native Biodiverse format[^1].</p>
+<p><a href="https://github.com/shawnlaffan/biodiverse/wiki/DataStructures#projects"><strong>Projects</strong></a> – (file extension <strong>.bps</strong>) are a composite structure and may consist of a set of any number of BaseData, Tree and Matrix objects and any associated analysis results. These are only used by the GUI.</p>
+<p><a href="https://github.com/shawnlaffan/biodiverse/wiki/DataStructures#basedata"><strong>BaseData</strong></a> – (file extension <strong>.bds</strong>) is the primary storage object used in Biodiverse. BaseData stores your spatial data (e.g.&nbsp;different species and their XY locations), a set of analysis parameters, and any associated outputs from cluster, moving window and/or randomisation analyses.</p>
+<p><a href="https://github.com/shawnlaffan/biodiverse/wiki/DataStructures#trees"><strong>Trees</strong></a> – (file extension <strong>.bts</strong>) these are hierarchical tree structures, e.g.&nbsp;phylogenies, taxonomies or word roots, which are imported from nexus and similar formats. These are used for analyses involving tree structures, e.g.&nbsp;phylogenetic diversity, linked by the matching labels in a BaseData.</p>
+<p><a href="https://github.com/shawnlaffan/biodiverse/wiki/DataStructures#matrices"><strong>Matrices</strong></a> – (file extension <strong>.bms</strong>) these are matrices of numeric values representing some relationship between pairs of labels or groups. These are used for analyses involving matrix structures linked by the matching labels in a BaseData. They are also used as part of cluster analyses, in which case they relate to pairs of groups in a BaseData object.</p>
+</section>
+<section id="3.2-opening-data" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="3.2-opening-data"><span class="header-section-number">5.2</span> <strong>3.2 Opening data</strong></h2>
+<p>To open pre-existing data (i.e.&nbsp;a Project, BaseData, Matrix or Tree saved to disk), select <em>Open</em> under the desired menu option and then navigate to the relevant file to load it:</p>
+<p>![][image4]<br>
+Or click ![][image5] on the relevant menu bar.</p>
+<p>Select the file you want to load, and click OK.</p>
+</section>
+<section id="3.3-importing-data" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="3.3-importing-data"><span class="header-section-number">5.3</span> <strong>3.3 Importing data</strong></h2>
+<p>BaseData, Matrix, and Tree object data can be imported from ‘raw’ data files (e.g.&nbsp;Tabular text, rasters, shapefiles, spreadsheets or CSV text files in the case of BaseData and Matrix objects) by clicking on their respective import buttons ![][image6] on the main toolbar, or via the ‘Import’ command in their respective menus.</p>
+<p>For BaseData objects, either a new object can be created, or an existing object can be added to. When adding data it is up to the user to ensure the new data are in the same coordinate system (i.e.&nbsp;Biodiverse does not check if you add data in UTM coordinates to a BaseData object using decimal degrees).</p>
+<section id="3.3.1-basedata" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="3.3.1-basedata"><span class="header-section-number">5.3.1</span> <strong>3.3.1 BaseData</strong></h3>
+<p>The default import file type for BaseData is delimited text (e.g.&nbsp;CSV files).</p>
+<p>These instructions describe the process where an input text file is in list format and contains one record per observation, with separate columns for one or more <a href="https://github.com/shawnlaffan/biodiverse/wiki/DataStructures#labels">labels</a> (e.g.&nbsp;names such as genus and species) and <a href="https://github.com/shawnlaffan/biodiverse/wiki/DataStructures#groups">groups</a> (e.g.&nbsp;x and y coordinates of a data point). However you can also import data from raster, <a href="https://biodiverse-analysis-software.blogspot.com/2018/12/import-polygon-and-polyline-data.html">shapefile</a> and <a href="https://biodiverse-analysis-software.blogspot.com/2015/06/import-your-species-data-from.html">spreadsheet</a> formats. All formats except raster can also represent a matrix of data such as for a sites by species matrix (see <a href="https://github.com/shawnlaffan/biodiverse/wiki/SampleSession#data-are-in-matrix-format">Importing Data in Matrix Format</a>).</p>
+<p>See the <em>Example_site_data.csv</em> file in the data folder for an example of the file format. The columns of data can be separated by commas, spaces, tabs, semicolons or some other user defined character. There is no restriction on column names or how many columns there are in the file but it is up to the user to know what they represent. You can allow the system to determine the separator type or select from a range of options.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>num</th>
+<th>genus</th>
+<th>species</th>
+<th>x</th>
+<th>y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Genus</td>
+<td>sp1</td>
+<td>3229628</td>
+<td>3078198</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Genus</td>
+<td>sp1</td>
+<td>3216986</td>
+<td>2951192</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Genus</td>
+<td>sp1</td>
+<td>3216038</td>
+<td>2960749</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Genus</td>
+<td>sp2</td>
+<td>3217265</td>
+<td>2960874</td>
+</tr>
+</tbody>
+</table>
+<p>Select the import button ![][image6] on the BaseData toolbar (or use menu <em>Basedata&gt;Import</em>) to open the <em>Import Data</em> dialogue window, from where you can select the input data file.</p>
+<p>![][image7]</p>
+<p>The text box at the top right of the <em>Import Data</em> window allows you to name the output BaseData object that will be produced. Once you are finished, click <strong><em>Next</em></strong>.</p>
+<p>![][image8]</p>
+<p>You will then see the Import Options window with various options you can set for the import:</p>
+<p>![][image9]</p>
+<p>Details of all the import options are described in <a href="https://github.com/shawnlaffan/biodiverse/wiki/SampleSession#importing-data">Import Options</a>, but leave all of them unchecked for this tutorial, except ‘<em>Skip lines with undef groups</em>’. Checking this option allows you to ignore records where a group field is either undefined or non-numeric. Such records can occur where you do not know the coordinates for a sample, if you choose the wrong column to use for the groups, or if you have a series of lines with no data at the end of a file.</p>
+<p>If you are not importing the <em>Example_site_data.csv</em> file, bear in mind you might need to check some of the other import options. A useful option is ‘<em>Allow empty groups</em>’ which lets you have groups that are considered for analysis, but that have no labels themselves. This is useful when you wish to have moving window analyses extend beyond the sampled data to give a smoother result.</p>
+<p>Click <strong><em>Next</em>.</strong></p>
+<p>The <em>Choose columns</em> dialog box appears and allows you to select various options for each column in your input text file.</p>
+<p>![][image10]</p>
+<p>You must set a <em>Type</em> value for at least one Group and one Label column, but more than one of each may be chosen.</p>
+<p>All columns in your file that are irrelevant to the analysis should be set to <em>Ignore</em>, as is done for the <strong>num</strong> column in this case.</p>
+<p>Select <em>Label</em> as the <em>Type</em> for the <strong>genus</strong> and <strong>species</strong> columns. This represents genus and species values for each record as one combined label, i.e.&nbsp;‘<em>Genus species</em>’.</p>
+<p>Select <em>Group</em> as the <em>Type</em> for the <strong>X</strong> and <strong>Y</strong> columns.</p>
+<p>When a Group column has been set you will be given the option to select its cell size (in the same units as the group data is stored) and its origin. If you are not importing the <em>Example_site_data.csv</em> file, make sure these dimensions and units are appropriate to your data. You can specify if the group data are degrees using the <em>Data in degrees?</em> comboboxes. This allows you to import data in degrees minutes seconds (e.g.&nbsp;22° 15’ 10’’ S) and decimal degrees formats, as well as enabling some validation that the coordinate values are in the correct range for such units.</p>
+<p>The Re-order Columns dialog box is the next window to appear. This allows you to order your labels and groups. For example, placing “y” above “x” makes the y column data the first dimension of a group’s coordinates and x the second (useful if latitude precedes longitude in the column order of your input file). If you forget this step then the axis order can be changed later on using the <em>Duplicate with re-ordered axes</em> tool under the BaseData menu.</p>
+<p>Since the columns in <em>Example_site_data.csv</em> are already in the correct order, we will accept the current column ordering. Click <strong><em>OK</em></strong>.</p>
+<p>![][image11]</p>
+<p>Biodiverse now imports the data from the Example_site_data.csv input file and creates a new BaseData object. Once the import process is complete, the name of the new BaseData object (‘My_new_basedata’ in this case) appears in the top-left of the Biodiverse main window.</p>
+<section id="section" class="level4" data-number="5.3.1.1">
+<h4 data-number="5.3.1.1" class="anchored" data-anchor-id="section"><span class="header-section-number">5.3.1.1</span> </h4>
+</section>
+<section id="3.3.1.1-remap" class="level4" data-number="5.3.1.2">
+<h4 data-number="5.3.1.2" class="anchored" data-anchor-id="3.3.1.1-remap"><span class="header-section-number">5.3.1.2</span> <strong>3.3.1.1 Remap</strong></h4>
+<p>The option to remap label names will appear after the re-order option.</p>
+<p>The remap process can generate possible matches between spatial data and any tree, matrices, group properties and label properties automatically. While this section is focused on importing BaseData, any object can have its element names remapped during or after import, with the latter accessed through the Basedata, Tree and Matrix menus as appropriate. The centralised interface for automatic remaps can be accessed under the file menu, as below. There are panes listing exact matches, non-matches (i.e.&nbsp;differences were too great), punctuation matches and possible typos. Users can choose to ignore any of these sets, and also select subsets within the sets if, for example, there are false matches. See the <a href="https://biodiverse-analysis-software.blogspot.com/2017/04/matching-spatial-tree-matrix-and.html">blog for further remap information and examples</a>.</p>
+<p>Since we are just importing example base data we will not remap so choose “no”.![][image12]</p>
+<p>Having imported data into a BaseData object, you are now ready to run cluster, moving window and randomisation analyses, or you can <strong>visualise</strong> this data (see <a href="#heading=h.4i7ojhp">Visualising Data</a>) or calculate a <strong>spatial index</strong> (see <a href="#heading=h.3as4poj">Building a Spatial Index</a>) which helps run faster analyses when using this BaseData. Alternatively, you can now import additional data files (see importing <a href="#3.3.2-matrices">Matrices</a> and <a href="#heading=h.1y810tw">Trees</a> below).</p>
+<p>However, prior to doing anything else, it is a good idea to <strong>Save</strong> your newly imported data. Use the <em>File &gt; Save</em> menu option to save the whole project. To save just the BaseData select the My_new_basedata object, and save it as a BaseData object, either via the <em>Basedata</em> menu (<em>Basedata</em> &gt; <em>Save as</em>) or the ![][image13] icon on the Basedata toolbar.</p>
+</section>
+</section>
+<section id="3.3.2-matrices" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="3.3.2-matrices"><span class="header-section-number">5.3.2</span> <strong>3.3.2 Matrices</strong></h3>
+<p>Matrix data can be imported at any time, although it can only be viewed with an existing (and selected) BaseData object. Currently only delimited text files can be imported (e.g.&nbsp;csv or txt files).</p>
+<p>Remember that these matrices are not site by species matrices. These are matrices of numeric values representing some relationship between pairs of labels or groups, for example numbers of base pairs shared between pairs of labels. Site by species data are imported using the basedata import process.</p>
+<p>Select the import button ![][image6] on the Matrix toolbar to open the Import Matrix dialogue window, from where you can select the input data file. Select <em>Example_matrix.txt</em>, give the new Matrix a name if you like, and click <strong><em>OK</em></strong>.</p>
+<p>![][image14]</p>
+<p>After deciding if your matrix input file format is normal or sparse, you must now decide how the columns in the matrix file should be read. You must select at least one label column, and <strong>only one</strong> “<em>Matrix start</em>” column. Any other columns in the file should be set to “<em>Ignore</em>”.</p>
+<p>![][image15]</p>
+<p>Click Ok, then select No when prompted to <em>Remap element names and set include/exclude?</em> The matrix is imported and appears in the drop-down menu in the matrix toolbar at the top of the screen.</p>
+<p>The matrix can only be visualised once a BaseData object has been imported and visualised as well. (it will only produce a useful display if the matrix and BaseData share at least some labels).![][image16]</p>
+<p>Note that you can either save the matrix as a Matrix <em>.bms</em> object (‘<em>Matrices &gt; Save as</em>’ from the menu), or it can be saved as part of a Project see <a href="6-export.html#6.1-saving-a-project">Saving a Project</a> at the end of this guide.</p>
+</section>
+<section id="section-1" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="section-1"><span class="header-section-number">5.3.3</span> </h3>
+</section>
+<section id="3.3.3-trees" class="level3" data-number="5.3.4">
+<h3 data-number="5.3.4" class="anchored" data-anchor-id="3.3.3-trees"><span class="header-section-number">5.3.4</span> <strong>3.3.3 Trees</strong></h3>
+<p>There are two options for creating Trees in Biodiverse:</p>
+<ol type="1">
+<li><p>Import a Tree into a project at any time</p></li>
+<li><p>Derive a Tree at any time if you already have a BaseData and/or matrix object selected.</p></li>
+</ol>
+<p>In both cases, a Tree can only be visualised with an existing BaseData object. A Tree is most useful if it shares some labels with the BaseData being displayed.</p>
+<p><strong>Importing a Tree</strong><br>
+A Tree can be imported from nexus (*.nex or *.tre), newick, “R json” or tabular formats. Once a tree is imported, it will be added to the project.<br>
+To import a Tree, select the import button ![][image6] on the Tree toolbar. A window will appear asking if your tree data are in a tabular format. After selecting YES or NO, you can select your file:</p>
+<p>![][image17]</p>
+<p>Select your file and click <strong><em>OK</em></strong>. You will then have the option of choosing a label remap file. This is often needed so the node names match the relevant BaseData labels (see FAQ page: <a href="https://github.com/shawnlaffan/biodiverse/wiki/FAQ#my-phylogenetic-analyses-have-empty-results">My phylogenetic analyses have empty results</a>). In many cases a phylogenetic tree will have labels like “genus_species”, but if you imported data from a file that has genus and species in separate columns then the labels will look like “genus:species”, which will not match. This is where remapping is needed.</p>
+<p>![][image18]</p>
+<p>Since we are using the example input data, we will remap (but if you don’t wish to remap labels, simply click <strong><em>Cancel</em></strong> and the system will import the tree).</p>
+<p>To remap the tree labels using an existing file, click <strong><em>YES</em></strong>. You are prompted to select a remap “label Source”. Here we use “user derived file” to select our <em>Example_tree_remap.txt</em> file. Click <strong><em>OK</em></strong>, accept the column separator and quote defaults, click <strong><em>Next</em></strong>.</p>
+<p>![][image19]</p>
+<p>A popup dialog now prompts you to specify the column types for the remap process. Specify as many <em>input_element</em> columns as the tree labels have (i.e.&nbsp;one for nexus files) and then each label column in the BaseData object must be designated as a <em>remapped_element</em>. Click <strong><em>OK</em></strong>. The system will import the tree and perform the remapping.</p>
+<p>![][image20]</p>
+<p><strong>Deriving a Tree</strong><br>
+You can derive a Tree from a BaseData object or Matrix at any time. Select the “<em>Create tree from labels</em>” or “<em>Convert matrix to tree</em>” options under the BaseData and Matrix menus, respectively:</p>
+<table class="caption-top">
+<tbody>
+</tbody>
+</table>
+<p>When generating a tree from the BaseData labels, labels are treated as taxonomic names, and thus are useful if the labels have at least two components (e.g.&nbsp;genus and species). A tree generated from a matrix is simply a cluster analysis using the average linkage function, so will only be valid for dissimilarity matrices.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -650,10 +777,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./2-starting.html" class="pagination-link" aria-label="Starting Biodiverse">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Starting Biodiverse</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./1-overview.html" class="pagination-link" aria-label="Overview">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./4-visualise.html" class="pagination-link" aria-label="Visualising">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Visualising</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
