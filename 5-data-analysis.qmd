@@ -2,9 +2,7 @@
 title: "Data Analysis"
 ---
 
-# **5\. Data Analysis**  {#5.-data-analysis}
-
-## **5.1 Building a Spatial Index** {#5.1-building-a-spatial-index}
+##  Building a Spatial Index {#5.1-building-a-spatial-index}
 
 We will build a **spatial index** for our new BaseData object. A spatial index enables analyses using this BaseData to run faster (though beware that some user-defined [spatial conditions](#5.3.2-setting-the-spatial-analysis-options) will not work with a spatial index). Note that an index can be deleted/rebuilt at any time, and these changes affect only subsequent analyses, not those that preceded any change.
 
@@ -18,7 +16,7 @@ Click ***OK*** to build the spatial index. A pop-up dialog notifies you that the
 
 ![][image30]
 
-## **5.2 Running a Cluster Analysis** {#5.2-running-a-cluster-analysis}
+##  Running a Cluster Analysis** {#5.2-running-a-cluster-analysis}
 
 Once you have imported or opened a BaseData object, you can run cluster analyses to identify clusters in this data. 
 
@@ -38,7 +36,7 @@ The cluster analysis tab opens. It has three main sections where you can set opt
 * There are check-boxes in the middle section that can be toggled to alter how the cluster analysis runs, e.g. by controlling aspects like process performance (e.g. memory usage), the automatic export of results, etc.  
 * The lower (*Spatial calculations to run for each cluster node*) determines what subsequent calculations will be run for each node in this tree, using the groups it contains to define the spatial sample.  This allows you to, for example, calculate the phylogenetic diversity of the regions defined by each cluster node. 
 
-  ### **5.2.1 Setting cluster analysis parameters** {#5.2.1-setting-cluster-analysis-parameters}
+###  Setting cluster analysis parameters** {#5.2.1-setting-cluster-analysis-parameters}
 
 For the purposes of this guide, accept the default **name** for the cluster analyses (see diagram above) and also the default **metric** ‘*SORENSON*’ (the set of indices that can be used as the clustering metric is denoted by a column in the [Indices](https://github.com/shawnlaffan/biodiverse/wiki/Indices) list). We will also accept the default **linkage** of ‘*link\_average*’, which calculates the dissimilarity of each newly created group with all other groups as the average value of the groups merged to form it, weighted by the number of terminal nodes they each include. In this way a merger between node A with 10 terminal nodes and node B with 1 terminal node will not be biased towards the labels in node B (see the [Cluster parameters](https://github.com/shawnlaffan/biodiverse/wiki/SampleSession#running-a-cluster-analysis) section of the Sample Session for details of the additional linkage functions that are available). 
 
@@ -48,7 +46,7 @@ Check the **option** or **calculations** boxes as appropriate.  If you’re curi
 
 Click on the ***Go\!*** button (keyboard shortcut *Control-G*). The system will first build the dissimilarity matrix (or matrices if you have several spatial conditions), then run the clustering using these matrices, and then any spatial calculations you have selected for each node. It will then prompt you to ***display results***.
 
-### **5.2.2 Viewing the cluster results** {#5.2.2-viewing-the-cluster-results}
+###  Viewing the cluster results
 
 There are three sub-panes within the display pane. On the left is the group grid, on the upper right is the tree representing the clustering, and on the lower right is the scree plot for the tree.
 
@@ -60,9 +58,9 @@ The blue sliding bar in the tree pane can be dragged across the tree to colour t
 
 It is also possible to [assign your own colours to the clusters](https://biodiverse-analysis-software.blogspot.com/2016/09/new-selection-tool-in-cluster-analysis.html) and to generate a geotiff (raster) to [reproduce the coloured cells in other systems](https://biodiverse-analysis-software.blogspot.com/2018/08/cluster-analyses-export-coloured.html).   
 
-## **5.3 Running a Spatial (Moving Window) Analysis** {#5.3-running-a-spatial-(moving-window)-analysis}
+##  Running a Spatial (Moving Window) Analysis** {#5.3-running-a-spatial-(moving-window)-analysis}
 
-### **5.3.1 Introduction** {#5.3.1-introduction}
+###  Introduction
 
 The Spatial Analyses are a type of moving window analyses (because nearly all analyses in Biodiverse are spatial in some way), and are another method of identifying spatial patterns in your data. Depending upon the exact nature of your data, it is likely that the Groups comprising your BaseData constitute a geographic surface. Moving windows are used to systematically iterate across this space, with one or two **neighbourhoods** of the moving window being used to assess the labels/values aggregated in the Groups. The window might also consist only of the processing group, with no neighbours (each group is analysed separately).
 
@@ -74,7 +72,7 @@ Select a Basedata object by clicking on it and open the menu option *Analyses \-
 
 The Spatial tab has two main sections where you can set options. The upper section (*Parameters*) determines the parameters used in defining the two neighbour sets used in the spatial analysis (the second is optional) as well as the definition query. The lower (*Calculations to run for each neighbourhood*) determines the subsequent calculations that will be run for the set of neighbours related to each group. You can select any number of calculations to perform.
 
-### **5.3.2 Setting the Spatial Analysis Options** {#5.3.2-setting-the-spatial-analysis-options}
+###  Setting the Spatial Analysis Options
 
 The **Name** option is the name used in the system. You can accept the default, or enter a new name (you cannot have duplicate names within the same BaseData object). 
 
@@ -92,7 +90,7 @@ The **Definition query** text box allows the analysis to be applied to only a su
 
 The Verify buttons let you know if the spatial conditions entered are syntactically valid.
 
-### **5.3.3 Selecting indices to calculate** {#5.3.3-selecting-indices-to-calculate}
+###  Selecting indices to calculate
 
 Use the check boxes to select which calculations are to be calculated. Press the plus buttons next to the *Endemism,* *Lists and Counts* and *Taxonomic Dissimilarity and Comparison* sets to expand their trees. Check the boxes of *Endemism central*, *Redundancy* and *Richness* under *Lists and Counts* and *Sorenson* under the *Taxonomic Dissimilarity and Comparison* set.
 
@@ -102,7 +100,7 @@ Click on the ***Go\!*** button. The system will then run the selected spatial an
 
 ![][image35]
 
-### **5.3.4 Viewing the Spatial Analysis Results** {#5.3.4-viewing-the-spatial-analysis-results}
+###  Viewing the Spatial Analysis Results
 
 Once the analysis is complete, the system asks you whether you want to display the results. Click *Yes* and you will be shown a map of the moving window analysis results. Pull the pane down to view the options you used, for example to change them and re-run the analysis.
 
@@ -118,7 +116,7 @@ Nothe that Biodiverse is not yet aware of coordinate systems and only “sees”
 
 ## 
 
-### **5.3.5 Running analysis with local neighbours** {#5.3.5-running-analysis-with-local-neighbours}
+###  Running analysis with local neighbours
 
  
 
@@ -138,9 +136,9 @@ Holding the control key while clicking on a group, or clicking on a group with t
 
 The tree branches are coloured according to whether they are found only in the first neighbour set (blue), the second neighbour set (red) , both (black) or neither (grey).  See also the [blog post](https://biodiverse-analysis-software.blogspot.com/2016/01/more-on-tree-visualisations-in.html).  [Some indices can also be plotted on the tree](https://biodiverse-analysis-software.blogspot.com/2017/09/visualise-spatial-analysis-results-on.html).  
 
-## **5.4 Running a Randomisation Analysis** {#5.4-running-a-randomisation-analysis}
+##  Running a Randomisation Analysis
 
-### **5.4.1 Introduction** {#5.4.1-introduction}
+###  Introduction
 
 Randomisations in Biodiverse are used to assess the statistical significance of a set of analysis results given some randomisation scheme such as shuffling the species around the map (labels across groups in Biodiverse terms), subject to constraints such as each cell (group) must maintain the same number of species. Randomisations are key to interpreting where results differ from what would be expected, and are integral to protocols such as the Categorical Analysis of Paleo and Neo Endemism ([CANAPE](https://biodiverse-analysis-software.blogspot.com/2022/10/biodiverse-now-calculates-canape-for-you.html)). The output can provide rank-relative scores from which significance can be derived as well as [z-scores](https://biodiverse-analysis-software.blogspot.com/2020/11/randomisations-now-also-generate-z.html). 
 
@@ -177,7 +175,7 @@ A description of what the list and index names mean is also in the [main help sy
 
  
 
-### **5.4.2 Spatially Structured Randomisations** {#5.4.2-spatially-structured-randomisations}
+###  Spatially Structured Randomisations
 
 In the standard implementation of a randomisation, labels are randomly allocated to any group across the entire data set.  This works well for many studies and is very effective, however, when one begins to scale analyses to larger extents, then the total pool of labels begins to span many different environments.  The randomisations could allocate a polar taxon to the tropics, and a desert taxon to a rainforest.  This does not make the randomisation invalid, but it is perhaps not as strict as it could be, and perhaps also not as realistic. 
 
