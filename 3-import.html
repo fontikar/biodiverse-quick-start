@@ -174,13 +174,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#data-structures" id="toc-data-structures" class="nav-link active" data-scroll-target="#data-structures"><span class="header-section-number">4.1</span> Data structures</a></li>
-  <li><a href="#opening-data" id="toc-opening-data" class="nav-link" data-scroll-target="#opening-data"><span class="header-section-number">4.2</span> ** Opening data**</a></li>
+  <li><a href="#opening-data" id="toc-opening-data" class="nav-link" data-scroll-target="#opening-data"><span class="header-section-number">4.2</span> Opening data</a></li>
   <li><a href="#importing-data" id="toc-importing-data" class="nav-link" data-scroll-target="#importing-data"><span class="header-section-number">4.3</span> Importing data</a>
   <ul class="collapse">
   <li><a href="#basedata" id="toc-basedata" class="nav-link" data-scroll-target="#basedata"><span class="header-section-number">4.3.1</span> BaseData</a></li>
   <li><a href="#matrices" id="toc-matrices" class="nav-link" data-scroll-target="#matrices"><span class="header-section-number">4.3.2</span> Matrices</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">4.3.3</span> </a></li>
-  <li><a href="#trees" id="toc-trees" class="nav-link" data-scroll-target="#trees"><span class="header-section-number">4.3.4</span> Trees</a></li>
+  <li><a href="#trees" id="toc-trees" class="nav-link" data-scroll-target="#trees"><span class="header-section-number">4.3.3</span> Trees</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -217,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://github.com/shawnlaffan/biodiverse/wiki/DataStructures#matrices"><strong>Matrices</strong></a> – (file extension <strong>.bms</strong>) these are matrices of numeric values representing some relationship between pairs of labels or groups. These are used for analyses involving matrix structures linked by the matching labels in a BaseData. They are also used as part of cluster analyses, in which case they relate to pairs of groups in a BaseData object.</p>
 </section>
 <section id="opening-data" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="opening-data"><span class="header-section-number">4.2</span> ** Opening data**</h2>
+<h2 data-number="4.2" class="anchored" data-anchor-id="opening-data"><span class="header-section-number">4.2</span> Opening data</h2>
 <p>To open pre-existing data (i.e.&nbsp;a Project, BaseData, Matrix or Tree saved to disk), select <em>Open</em> under the desired menu option and then navigate to the relevant file to load it:</p>
 <p>![][image4]<br>
 Or click ![][image5] on the relevant menu bar.</p>
@@ -314,11 +313,8 @@ Or click ![][image5] on the relevant menu bar.</p>
 <p>The matrix can only be visualised once a BaseData object has been imported and visualised as well. (it will only produce a useful display if the matrix and BaseData share at least some labels).![][image16]</p>
 <p>Note that you can either save the matrix as a Matrix <em>.bms</em> object (‘<em>Matrices &gt; Save as</em>’ from the menu), or it can be saved as part of a Project see <a href="#-saving-a-project">Saving a Project</a> at the end of this guide.</p>
 </section>
-<section id="section" class="level3" data-number="4.3.3">
-<h3 data-number="4.3.3" class="anchored" data-anchor-id="section"><span class="header-section-number">4.3.3</span> </h3>
-</section>
-<section id="trees" class="level3" data-number="4.3.4">
-<h3 data-number="4.3.4" class="anchored" data-anchor-id="trees"><span class="header-section-number">4.3.4</span> Trees</h3>
+<section id="trees" class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="trees"><span class="header-section-number">4.3.3</span> Trees</h3>
 <p>There are two options for creating Trees in Biodiverse:</p>
 <ol type="1">
 <li><p>Import a Tree into a project at any time</p></li>
@@ -335,8 +331,7 @@ To import a Tree, select the import button ![][image6] on the Tree toolbar. A wi
 <p>![][image19]</p>
 <p>A popup dialog now prompts you to specify the column types for the remap process. Specify as many <em>input_element</em> columns as the tree labels have (i.e.&nbsp;one for nexus files) and then each label column in the BaseData object must be designated as a <em>remapped_element</em>. Click <strong><em>OK</em></strong>. The system will import the tree and perform the remapping.</p>
 <p>![][image20]</p>
-<p><strong>Deriving a Tree</strong><br>
-You can derive a Tree from a BaseData object or Matrix at any time. Select the “<em>Create tree from labels</em>” or “<em>Convert matrix to tree</em>” options under the BaseData and Matrix menus, respectively:</p>
+<p><strong>Deriving a Tree</strong> You can derive a Tree from a BaseData object or Matrix at any time. Select the “<em>Create tree from labels</em>” or “<em>Convert matrix to tree</em>” options under the BaseData and Matrix menus, respectively:</p>
 <p>When generating a tree from the BaseData labels, labels are treated as taxonomic names, and thus are useful if the labels have at least two components (e.g.&nbsp;genus and species). A tree generated from a matrix is simply a cluster analysis using the average linkage function, so will only be valid for dissimilarity matrices.</p>
 
 
