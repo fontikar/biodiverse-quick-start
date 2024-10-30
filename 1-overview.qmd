@@ -2,47 +2,45 @@
 title: "Overview"
 ---
 
-1. # **Overview of Biodiverse** {#overview-of-biodiverse}
-
-## **1.1 What is Biodiverse?** {#1.1-what-is-biodiverse?}
+## What is Biodiverse? 
 
 Biodiverse is a free tool for the spatial analysis of diversity using indices based on taxonomic, phylogenetic, matrix and trait-based relationships. Analyses can be run on a wide range of variables that vary across space and/or time, whether they are biological (e.g., diversity distributions of marsupials across Australia), physical (e.g., variation in rainfall across continental US), or other systems (e.g., geographic and temporal distribution of various Mediterranean dialects).
 
-## **1.2 What analyses can I do with Biodiverse?** {#1.2-what-analyses-can-i-do-with-biodiverse?}
+##  What analyses can I do with Biodiverse? 
 
-You can run a range of spatial analyses, such as **cluster**, **moving window** and **randomisation** analyses, visualise analysis results in interactive diagrams and maps, and optionally export analysis results to a variety of formats (e.g. delimited text, geoTIFF, JSON) to third party software for further analysis, such as ESRI ArcGIS, R and Matlab.
+You can run a range of spatial analyses, such as cluster, moving window and randomisation analyses, visualise analysis results in interactive diagrams and maps, and optionally export analysis results to a variety of formats (e.g. delimited text, geoTIFF, JSON) to third party software for further analysis, such as ESRI ArcGIS, R and Matlab.
 
-## **1.3  What programming language is Biodiverse developed in?** {#1.3-what-programming-language-is-biodiverse-developed-in?}
+##   What programming language is Biodiverse developed in? 
 
 Biodiverse is written in the [Perl programming language](https://www.perl.org/).  There are two parts: an analysis engine, which can be scripted using perl code, and a GUI which is developed using [Gtk2](https://www.gtk.org/) and which calls the analytical engine.
 
-## **1.4 Which operating systems does Biodiverse support?** {#1.4-which-operating-systems-does-biodiverse-support?}
+##  Which operating systems does Biodiverse support? 
 
 You can install and run binary and source code versions of Biodiverse on Windows, MacOS and Linux platforms. The analysis engine is also tested on the FreeBSD OS and source code installations can be used on that platform.  Visit the Biodiverse [Downloads](https://github.com/shawnlaffan/biodiverse/wiki/Downloads) page to obtain the version of Biodiverse you wish to install.
 
-## **1.5 How do I install Biodiverse?** {#1.5-how-do-i-install-biodiverse?}
+##  How do I install Biodiverse? 
 
 Follow the [Installation](https://github.com/shawnlaffan/biodiverse/wiki/Installation) instructions webpage for your selected version.
 
-## **1.6 Using this guide** {#1.6-using-this-guide}
+##  Using this guide 
 
-## **1.7 Where can I get additional help?** {#1.7-where-can-i-get-additional-help?}
+##  Where can I get additional help? 
 
 You can access a range of Biodiverse Help Topics by clicking on the Help option on the menu bar within the Biodiverse application (see image below). You can also hover the mouse pointer over most buttons and menu items in Biodiverse to view their associated tooltips. 
 
 This guide does not cover all the detailed aspects of Biodiverse functionality, so links to the online Biodiverse documentation covering more detailed information are provided throughout. Alternatively, visit the [Biodiverse Project Home](http://shawnlaffan.github.io/biodiverse/) for more extensive software documentation.
 
-You can also send questions to the Biodiverse discussion forum at [https://github.com/shawnlaffan/biodiverse/discussions](https://github.com/shawnlaffan/biodiverse/discussions) or at [https://groups.google.com/forum/\#\!forum/biodiverse-users](https://groups.google.com/forum/#!forum/biodiverse-users). **We welcome any queries, comments or feedback. ![][image2]**
+You can also send questions to the Biodiverse discussion forum at [https://github.com/shawnlaffan/biodiverse/discussions](https://github.com/shawnlaffan/biodiverse/discussions) or at [https://groups.google.com/forum/\#\!forum/biodiverse-users](https://groups.google.com/forum/#!forum/biodiverse-users). We welcome any queries, comments or feedback. ![][image2]
 
-## **1.8 Some key terminology** {#1.8-some-key-terminology}
+##  Some key terminology 
 
 The two concepts below are important when using Biodiverse. For details of a fuller list of Biodiverse terminology, see the [Data Structures](https://github.com/shawnlaffan/biodiverse/wiki/DataStructures) page. 
 
-### **1.8.1 Labels** {#1.8.1-labels}
+### .1 Labels 
 
-Typically labels represent species, but in reality they can be any named entity that is then aggregated, or ‘binned’, into a [Group](#1.8.2-groups). Hence, an individual label could also represent other taxonomic levels, e.g. a genus, or distinct entities from other phenomena, such as lithological classes (e.g. different rock types) or linguistic structures (e.g. different phonemes).
+Typically labels represent species, but in reality they can be any named entity that is then aggregated, or ‘binned’, into a [Group](#.2-groups). Hence, an individual label could also represent other taxonomic levels, e.g. a genus, or distinct entities from other phenomena, such as lithological classes (e.g. different rock types) or linguistic structures (e.g. different phonemes).
 
-### **1.8.2 Groups** {#1.8.2-groups}
+### .2 Groups 
 
 Groups are cells into which the labels are aggregated (binned). These are usually square, but can represent any number of axes (x, y, z, time, population-ID, …) with differing cell sizes (resolutions) and numeric or text types. The groups are plotted in the interactive maps that Biodiverse produces as outputs of data visualisation and spatial analyses, as in the example below. Groups are also integral to the spatial components of the moving window, cluster and randomisation analyses. 
 
