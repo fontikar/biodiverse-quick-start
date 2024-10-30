@@ -94,17 +94,17 @@
     "href": "2-starting.html",
     "title": "3  Starting Biodiverse",
     "section": "",
-    "text": "3.1 2.1 Windows\nIf you’ve installed the Binary version of Biodiverse, start the program by double clicking on BiodiverseGUI.exe in the Biodiverse installation folder (wherever you unzipped it).\nIf you have installed the source code version then you can double click the BiodiverseGUI.bat file in the Biodiverse installation folder.",
+    "text": "3.1 Windows\nIf you’ve installed the Binary version of Biodiverse, start the program by double clicking on BiodiverseGUI.exe in the Biodiverse installation folder (wherever you unzipped it).\nIf you have installed the source code version then you can double click the BiodiverseGUI.bat file in the Biodiverse installation folder.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Starting Biodiverse</span>"
     ]
   },
   {
-    "objectID": "2-starting.html#2.2-linux-and-macos",
-    "href": "2-starting.html#2.2-linux-and-macos",
+    "objectID": "2-starting.html#linux-and-macos",
+    "href": "2-starting.html#linux-and-macos",
     "title": "3  Starting Biodiverse",
-    "section": "3.2 2.2 Linux and MacOS",
-    "text": "3.2 2.2 Linux and MacOS\nOn Linux, the binary version of Biodiverse can be run by double clicking on BiodiverseGUI. On MacOS the installation process allows you to dock it, in which case you open it like any other application.\nTo run the source code version of Biodiverse, open a terminal window and change directory to the biodiverse/bin folder. If it is in your home folder and called biodiverse then type:\ncd ~/biodiverse/bin\nOnce you have done this, type the following command to open Biodiverse.\nperl BiodiverseGUI.pl\nAlternately you can use the full path, e.g.:\nperl ~/biodiverse/bin/BiodiverseGUI.pl",
+    "section": "3.2 Linux and MacOS",
+    "text": "3.2 Linux and MacOS\nOn Linux, the binary version of Biodiverse can be run by double clicking on BiodiverseGUI. On MacOS the installation process allows you to dock it, in which case you open it like any other application.\nTo run the source code version of Biodiverse, open a terminal window and change directory to the biodiverse/bin folder. If it is in your home folder and called biodiverse then type:\ncd ~/biodiverse/bin\nOnce you have done this, type the following command to open Biodiverse.\nperl BiodiverseGUI.pl\nAlternately you can use the full path, e.g.:\nperl ~/biodiverse/bin/BiodiverseGUI.pl",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Starting Biodiverse</span>"
     ]
