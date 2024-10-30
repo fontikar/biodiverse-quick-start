@@ -16,7 +16,7 @@ Before importing data it is important to understand the sorts of data supported 
 
 [**Matrices**](https://github.com/shawnlaffan/biodiverse/wiki/DataStructures#matrices) – (file extension **.bms**) these are matrices of numeric values representing some relationship between pairs of labels or groups. These are used for analyses involving matrix structures linked by the matching labels in a BaseData. They are also used as part of cluster analyses, in which case they relate to pairs of groups in a BaseData object.
 
-## \*\* Opening data\*\*
+## Opening data
 
 To open pre-existing data (i.e. a Project, BaseData, Matrix or Tree saved to disk), select *Open* under the desired menu option and then navigate to the relevant file to load it:
 
@@ -117,8 +117,6 @@ The matrix can only be visualised once a BaseData object has been imported and v
 
 Note that you can either save the matrix as a Matrix *.bms* object (‘*Matrices \> Save as*’ from the menu), or it can be saved as part of a Project see [Saving a Project](#-saving-a-project) at the end of this guide.
 
-### 
-
 ### Trees
 
 There are two options for creating Trees in Biodiverse:
@@ -149,7 +147,7 @@ A popup dialog now prompts you to specify the column types for the remap process
 
 \![\]\[image20\]
 
-**Deriving a Tree**\
+**Deriving a Tree**
 You can derive a Tree from a BaseData object or Matrix at any time. Select the “*Create tree from labels*” or “*Convert matrix to tree*” options under the BaseData and Matrix menus, respectively:
 
 When generating a tree from the BaseData labels, labels are treated as taxonomic names, and thus are useful if the labels have at least two components (e.g. genus and species). A tree generated from a matrix is simply a cluster analysis using the average linkage function, so will only be valid for dissimilarity matrices.
