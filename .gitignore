@@ -12,3 +12,4 @@ ignore/
 *.html
 *_files
 
+~$*.pptx

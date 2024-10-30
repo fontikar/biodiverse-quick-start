@@ -20,13 +20,13 @@ Before importing data it is important to understand the sorts of data supported 
 
 To open pre-existing data (i.e. a Project, BaseData, Matrix or Tree saved to disk), select *Open* under the desired menu option and then navigate to the relevant file to load it:
 
-\![\]\[image4\]\
-Or click \![\]\[image5\] on the relevant menu bar.
+![](images/image3.0.png)
+Or click ![](images/image-open.png) on the relevant menu bar.
 
 Select the file you want to load, and click OK.
 
 ##  Importing data
-BaseData, Matrix, and Tree object data can be imported from ‘raw’ data files (e.g. Tabular text, rasters, shapefiles, spreadsheets or CSV text files in the case of BaseData and Matrix objects) by clicking on their respective import buttons \![\]\[image6\] on the main toolbar, or via the ‘Import’ command in their respective menus.
+BaseData, Matrix, and Tree object data can be imported from ‘raw’ data files (e.g. Tabular text, rasters, shapefiles, spreadsheets or CSV text files in the case of BaseData and Matrix objects) by clicking on their respective import buttons ![](images/image3.2.png) on the main toolbar, or via the ‘Import’ command in their respective menus.
 
 For BaseData objects, either a new object can be created, or an existing object can be added to. When adding data it is up to the user to ensure the new data are in the same coordinate system (i.e. Biodiverse does not check if you add data in UTM coordinates to a BaseData object using decimal degrees).
 
@@ -45,17 +45,17 @@ See the *Example_site_data.csv* file in the data folder for an example of the fi
 | 3   | Genus | sp1     | 8   | 9   |
 | 4   | Genus | sp2     | 5   | 4   |
 
-Select the import button \![\]\[image6\] on the BaseData toolbar (or use menu *Basedata\>Import*) to open the *Import Data* dialogue window, from where you can select the input data file.
+Select the import button ![](images/image-import.png) on the BaseData toolbar (or use menu *Basedata\>Import*) to open the *Import Data* dialogue window, from where you can select the input data file.
 
-\![\]\[image7\]
+![](images/image3.3.png)
 
 The text box at the top right of the *Import Data* window allows you to name the output BaseData object that will be produced. Once you are finished, click ***Next***.
 
-\![\]\[image8\]
+![](images/image3.4.png)
 
 You will then see the Import Options window with various options you can set for the import:
 
-\![\]\[image9\]
+![](images/image3.5.png)
 
 Details of all the import options are described in [Import Options](https://github.com/shawnlaffan/biodiverse/wiki/SampleSession#importing-data), but leave all of them unchecked for this tutorial, except ‘*Skip lines with undef groups*’. Checking this option allows you to ignore records where a group field is either undefined or non-numeric. Such records can occur where you do not know the coordinates for a sample, if you choose the wrong column to use for the groups, or if you have a series of lines with no data at the end of a file.
 
@@ -65,7 +65,7 @@ Click ***Next***.
 
 The *Choose columns* dialog box appears and allows you to select various options for each column in your input text file.
 
-\![\]\[image10\]
+![](images/image3.6.png)
 
 You must set a *Type* value for at least one Group and one Label column, but more than one of each may be chosen.
 
@@ -81,7 +81,7 @@ The Re-order Columns dialog box is the next window to appear. This allows you to
 
 Since the columns in *Example_site_data.csv* are already in the correct order, we will accept the current column ordering. Click ***OK***.
 
-\![\]\[image11\]
+![](images/image3.7.png)
 
 Biodiverse now imports the data from the Example_site_data.csv input file and creates a new BaseData object. Once the import process is complete, the name of the new BaseData object (‘My_new_basedata’ in this case) appears in the top-left of the Biodiverse main window.
 
@@ -91,11 +91,13 @@ The option to remap label names will appear after the re-order option.
 
 The remap process can generate possible matches between spatial data and any tree, matrices, group properties and label properties automatically. While this section is focused on importing BaseData, any object can have its element names remapped during or after import, with the latter accessed through the Basedata, Tree and Matrix menus as appropriate. The centralised interface for automatic remaps can be accessed under the file menu, as below. There are panes listing exact matches, non-matches (i.e. differences were too great), punctuation matches and possible typos. Users can choose to ignore any of these sets, and also select subsets within the sets if, for example, there are false matches. See the [blog for further remap information and examples](https://biodiverse-analysis-software.blogspot.com/4/matching-spatial-tree-matrix-and.html).
 
-Since we are just importing example base data we will not remap so choose “no”.\![\]\[image12\]
+Since we are just importing example base data we will not remap so choose “no”.
+
+![](images/image3.8.png)
 
 Having imported data into a BaseData object, you are now ready to run cluster, moving window and randomisation analyses, or you can **visualise** this data (see [Visualising Data](#heading=h.ojhp)) or calculate a **spatial index** (see [Building a Spatial Index](#heading=h.3as4poj)) which helps run faster analyses when using this BaseData. Alternatively, you can now import additional data files (see importing [Matrices](#.2-matrices) and [Trees](#heading=h.10tw) below).
 
-However, prior to doing anything else, it is a good idea to **Save** your newly imported data. Use the *File \> Save* menu option to save the whole project. To save just the BaseData select the My_new_basedata object, and save it as a BaseData object, either via the *Basedata* menu (*Basedata* \> *Save as*) or the \![\]\[image13\] icon on the Basedata toolbar.
+However, prior to doing anything else, it is a good idea to **Save** your newly imported data. Use the *File \> Save* menu option to save the whole project. To save just the BaseData select the My_new_basedata object, and save it as a BaseData object, either via the *Basedata* menu (*Basedata* \> *Save as*) or the ![](images/image-save.png) icon on the Basedata toolbar.
 
 ### Matrices
 
@@ -103,17 +105,19 @@ Matrix data can be imported at any time, although it can only be viewed with an 
 
 Remember that these matrices are not site by species matrices. These are matrices of numeric values representing some relationship between pairs of labels or groups, for example numbers of base pairs shared between pairs of labels. Site by species data are imported using the basedata import process.
 
-Select the import button \![\]\[image6\] on the Matrix toolbar to open the Import Matrix dialogue window, from where you can select the input data file. Select *Example_matrix.txt*, give the new Matrix a name if you like, and click ***OK***.
+Select the import button ![](images/image-import.png) on the Matrix toolbar to open the Import Matrix dialogue window, from where you can select the input data file. Select *Example_matrix.txt*, give the new Matrix a name if you like, and click ***OK***.
 
-\![\]\[image14\]
+![](images/image3.9.png)
 
 After deciding if your matrix input file format is normal or sparse, you must now decide how the columns in the matrix file should be read. You must select at least one label column, and **only one** “*Matrix start*” column. Any other columns in the file should be set to “*Ignore*”.
 
-\![\]\[image15\]
+![](images/image3.10.png)
 
 Click Ok, then select No when prompted to *Remap element names and set include/exclude?* The matrix is imported and appears in the drop-down menu in the matrix toolbar at the top of the screen.
 
-The matrix can only be visualised once a BaseData object has been imported and visualised as well. (it will only produce a useful display if the matrix and BaseData share at least some labels).\![\]\[image16\]
+The matrix can only be visualised once a BaseData object has been imported and visualised as well. (it will only produce a useful display if the matrix and BaseData share at least some labels).
+
+![](images/image3.11.png)
 
 Note that you can either save the matrix as a Matrix *.bms* object (‘*Matrices \> Save as*’ from the menu), or it can be saved as part of a Project see [Saving a Project](#-saving-a-project) at the end of this guide.
 
@@ -129,25 +133,27 @@ In both cases, a Tree can only be visualised with an existing BaseData object. A
 
 **Importing a Tree**
 A Tree can be imported from nexus (\*.nex or \*.tre), newick, “R json” or tabular formats. Once a tree is imported, it will be added to the project.\
-To import a Tree, select the import button \![\]\[image6\] on the Tree toolbar. A window will appear asking if your tree data are in a tabular format. After selecting YES or NO, you can select your file:
+To import a Tree, select the import button ![](images/image-import.png) on the Tree toolbar. A window will appear asking if your tree data are in a tabular format. After selecting YES or NO, you can select your file:
 
-\![\]\[image17\]
+![](images/image3.12.png)
 
 Select your file and click ***OK***. You will then have the option of choosing a label remap file. This is often needed so the node names match the relevant BaseData labels (see FAQ page: [My phylogenetic analyses have empty results](https://github.com/shawnlaffan/biodiverse/wiki/FAQ#my-phylogenetic-analyses-have-empty-results)). In many cases a phylogenetic tree will have labels like “genus_species”, but if you imported data from a file that has genus and species in separate columns then the labels will look like “genus:species”, which will not match. This is where remapping is needed.
 
-\![\]\[image18\]
+![](images/image3.13.png)
 
 Since we are using the example input data, we will remap (but if you don't wish to remap labels, simply click ***Cancel*** and the system will import the tree).
 
 To remap the tree labels using an existing file, click ***YES***. You are prompted to select a remap “label Source”. Here we use “user derived file” to select our *Example_tree_remap.txt* file. Click ***OK***, accept the column separator and quote defaults, click ***Next***.
 
-\![\]\[image19\]
+![](images/image3.14.png)
 
 A popup dialog now prompts you to specify the column types for the remap process. Specify as many *input_element* columns as the tree labels have (i.e. one for nexus files) and then each label column in the BaseData object must be designated as a *remapped_element*. Click ***OK***. The system will import the tree and perform the remapping.
 
-\![\]\[image20\]
+![](images/image3.15.png){width=80%}
 
 **Deriving a Tree**
 You can derive a Tree from a BaseData object or Matrix at any time. Select the “*Create tree from labels*” or “*Convert matrix to tree*” options under the BaseData and Matrix menus, respectively:
+
+![](images/image3.16.png)
 
 When generating a tree from the BaseData labels, labels are treated as taxonomic names, and thus are useful if the labels have at least two components (e.g. genus and species). A tree generated from a matrix is simply a cluster analysis using the average linkage function, so will only be valid for dissimilarity matrices.
