@@ -2,14 +2,11 @@
 title: "Export"
 ---
 
-# **6\. Exporting and Saving** {#6.-exporting-and-saving}
-
-## **6.1 Saving a Project** {#6.1-saving-a-project}
+##  Saving a Project
 
 Exporting an entire project is done through the *File* menu using *Save* or *Save As*. This preserves all existing BaseData, matrix and tree objects – along with their associated analyses – as a “.bps” file.
 
-## **6.2 Exporting results, groups and labels** {#6.2-exporting-results,-groups-and-labels}
-
+##  Exporting results, groups and labels
 Exporting a cluster or spatial analysis to be opened in a different software package is done through the Outputs tab, or via the Export menu at the left of the map display when viewing the result. Select the appropriate output and click ***Export…***
 
 You can also export the groups or labels as a sites by species matrix (or similar) as per this example:
