@@ -2,21 +2,21 @@
 title: "Data Analysis"
 ---
 
-##  Building a Spatial Index {#5.1-building-a-spatial-index}
+##  Building a Spatial Index
 
 We will build a **spatial index** for our new BaseData object. A spatial index enables analyses using this BaseData to run faster (though beware that some user-defined [spatial conditions](#5.3.2-setting-the-spatial-analysis-options) will not work with a spatial index). Note that an index can be deleted/rebuilt at any time, and these changes affect only subsequent analyses, not those that preceded any change.
 
 Select *Build Spatial Index* from the *Analyses* menu option:
 
-![][image29]
+![](images/image5.0.png)
 
 For most purposes, accept the index sizes suggested by the system (see [Using the Spatial Index](https://github.com/shawnlaffan/biodiverse/wiki/KeyConcepts#using-the-spatial-index) for additional details on setting optimal index sizes).
 
 Click ***OK*** to build the spatial index. A pop-up dialog notifies you that the index has been built (***OK***).
 
-![][image30]
+![](images/image5.1.png)
 
-##  Running a Cluster Analysis** {#5.2-running-a-cluster-analysis}
+##  Running a Cluster Analysis
 
 Once you have imported or opened a BaseData object, you can run cluster analyses to identify clusters in this data. 
 
@@ -24,19 +24,21 @@ Biodiverse supports agglomerative clustering of the groups based on their labels
 
 We will run a cluster analysis on the BaseData imported earlier ‘*Example\_new\_basedata’* (see [Importing data](#3.3-importing-data)). If *My\_new\_basedata* is not loaded, but you have saved it, open this file now by clicking on ‘*Open*’ from the *Basedata* menu and navigating to the location of your bds file. 
 
-![][image31]
+![](images/image5.2.png)
 
-To run a cluster analysis on the currently selected BaseData object, select *Cluster* from the *Analyses* menu:![][image32]
+To run a cluster analysis on the currently selected BaseData object, select *Cluster* from the *Analyses* menu:
+
+![](images/image5.3.png)
 
 The cluster analysis tab opens. It has three main sections where you can set options:
 
-![][image33]
+![](images/image5.4.png)
 
 * The upper section (*Parameters*) determines the parameters used in the clustering to generate a tree.  This includes options to control the cluster tie-breaker algorithm.  
 * There are check-boxes in the middle section that can be toggled to alter how the cluster analysis runs, e.g. by controlling aspects like process performance (e.g. memory usage), the automatic export of results, etc.  
 * The lower (*Spatial calculations to run for each cluster node*) determines what subsequent calculations will be run for each node in this tree, using the groups it contains to define the spatial sample.  This allows you to, for example, calculate the phylogenetic diversity of the regions defined by each cluster node. 
 
-###  Setting cluster analysis parameters** {#5.2.1-setting-cluster-analysis-parameters}
+###  Setting cluster analysis parameters
 
 For the purposes of this guide, accept the default **name** for the cluster analyses (see diagram above) and also the default **metric** ‘*SORENSON*’ (the set of indices that can be used as the clustering metric is denoted by a column in the [Indices](https://github.com/shawnlaffan/biodiverse/wiki/Indices) list). We will also accept the default **linkage** of ‘*link\_average*’, which calculates the dissimilarity of each newly created group with all other groups as the average value of the groups merged to form it, weighted by the number of terminal nodes they each include. In this way a merger between node A with 10 terminal nodes and node B with 1 terminal node will not be biased towards the labels in node B (see the [Cluster parameters](https://github.com/shawnlaffan/biodiverse/wiki/SampleSession#running-a-cluster-analysis) section of the Sample Session for details of the additional linkage functions that are available). 
 
@@ -48,6 +50,8 @@ Click on the ***Go\!*** button (keyboard shortcut *Control-G*). The system will 
 
 ###  Viewing the cluster results
 
+![](images/image5.5.png)
+
 There are three sub-panes within the display pane. On the left is the group grid, on the upper right is the tree representing the clustering, and on the lower right is the scree plot for the tree.
 
 As with the visualisation of basedata/matrix/tree objects described earlier, the system is linked, and interactions in the group grid or tree of the cluster display are generally reflected in the other. Hovering the mouse over a node in the tree highlights the groups (in the group grid) that are contained in that node. Likewise, hovering the mouse over a group in the group grid will highlight the path (set of nodes/clusters) in the tree to which that group belongs. 
@@ -58,7 +62,7 @@ The blue sliding bar in the tree pane can be dragged across the tree to colour t
 
 It is also possible to [assign your own colours to the clusters](https://biodiverse-analysis-software.blogspot.com/2016/09/new-selection-tool-in-cluster-analysis.html) and to generate a geotiff (raster) to [reproduce the coloured cells in other systems](https://biodiverse-analysis-software.blogspot.com/2018/08/cluster-analyses-export-coloured.html).   
 
-##  Running a Spatial (Moving Window) Analysis** {#5.3-running-a-spatial-(moving-window)-analysis}
+##  Running a Spatial (Moving Window) Analysis
 
 ###  Introduction
 
@@ -68,7 +72,7 @@ To run a moving window analysis, you will need to have [imported or loaded](#ope
 
 Select a Basedata object by clicking on it and open the menu option *Analyses \-\> Spatial* and the spatial tab appears:
 
-![][image34]
+![](images/image5.6.png)
 
 The Spatial tab has two main sections where you can set options. The upper section (*Parameters*) determines the parameters used in defining the two neighbour sets used in the spatial analysis (the second is optional) as well as the definition query. The lower (*Calculations to run for each neighbourhood*) determines the subsequent calculations that will be run for the set of neighbours related to each group. You can select any number of calculations to perform.
 
@@ -98,37 +102,36 @@ Details about the full range of indices are available from the [Indices](https:/
 
 Click on the ***Go\!*** button. The system will then run the selected spatial analyses.
 
-![][image35]
+![](images/image5.7.png)
 
 ###  Viewing the Spatial Analysis Results
 
 Once the analysis is complete, the system asks you whether you want to display the results. Click *Yes* and you will be shown a map of the moving window analysis results. Pull the pane down to view the options you used, for example to change them and re-run the analysis.
 
-![][image36]
+![](images/image5.8.png)
 
 Vector overlays from shapefiles can be plotted using the “overlays” interface at the bottom of the screen. Click the *Overlays…* button, click *Add*, navigate to the Biodiverse/data folder and select *coastline\_lamberts.shp*, click *OK*, highlight this file in the Select Overlay dialog box and click *OK*.
 
 Nothe that Biodiverse is not yet aware of coordinate systems and only “sees” the coordinates as numbers.  This means that the vector data MUST be in the same coordinate system as your basedata.  If you have imported data as lat/long coordinates (a geographic coordinate system) then the vector data must also use geographic coordinates.  If your basedata are in an equal area coordinate system then your vector data must also be in that coordinate system.  
 
-![][image37]
+![](images/image5.9.png)
 
-![][image38]
+![](images/image5.10.png)
 
-## 
+
 
 ###  Running analysis with local neighbours
 
- 
 
 In the above moving window spatial analysis, the output visualisations only provided a single cell output of iterations within the map (black dot within the group cell).
 
 However, altering the second neighbour entry to ”sp\_circle (radius \= \> 500000)” when setting the initial analysis parameters (noted above), can identify aggregated relationships of these cells with their “neighbours”.
 
-![][image39]
+![](images/image5.11.png)
 
 The result is a display like this:
 
-![][image40]
+![](images/image5.12.png)
 
 Hovering over a group will highlight the groups used in the calculations – a solid circle for those in the first neighbourhood and a dash for those in the second neighbourhood. Right click on a group to keep the highlighting at that group until the mouse is left clicked on any group. You can control whether these are displayed, or just display one set, by using the Neighbours selection options. 
 
@@ -156,12 +159,12 @@ The basic process of the randomisation is this.  For each iteration of the rando
 
 Randomisations can be run by selecting the Analyses\>Randomisation menu option:
 
-![][image41]
+![](images/image5.13.png)
 
 Cluster and Region Grower trees are not rebuilt by default, partly for speed, partly because it is not normally needed.  If you do want to do so then select the “build randomised tree outputs” checkbox.  Note that any calculations per node are compared against the randomly generated basedata, though.
 
 
-![][image42]
+![](images/image5.14.png)
 
 Once the relevant parameters are specified, press “***Randomise\!***”. 
 
@@ -169,9 +172,9 @@ Once the relevant parameters are specified, press “***Randomise\!***”.
 
 A description of what the list and index names mean is also in the [main help system](https://github.com/shawnlaffan/biodiverse/wiki/AnalysisTypes#where-do-the-randomisation-results-go-and-what-do-they-mean).  (Consider for example the Rand1\>\>SPATIAL\_RESULTS list and C\_END\_CWE index below).
 
-![][image43]
+![](images/image5.15.png)
 
-![][image44]
+![](images/image5.16.png)
 
  
 
@@ -183,4 +186,4 @@ This can be readily fixed in Biodiverse by specifying a spatial condition to def
 
 To read more on spatially structured randomisations see [this](https://biodiverse-analysis-software.blogspot.com/search?q=structured+randomisation) blog post. 
 
-![][image45]
+![](images/image5.14.png)
