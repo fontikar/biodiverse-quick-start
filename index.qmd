@@ -12,5 +12,7 @@ There is also a blog that provides updates and tips about functionality.  It can
 
 If you have question about the software then please start a discussion at [https://github.com/shawnlaffan/biodiverse/discussions](https://github.com/shawnlaffan/biodiverse/discussions) or post a question at [https://groups.google.com/forum/\#\!forum/biodiverse-users](https://groups.google.com/forum/#!forum/biodiverse-users) 
 
-![][image1]  
+
 This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License](http://creativecommons.org/licenses/by-nc-nd/3.0/).  
+
+![](images/image-cc-by.png)
