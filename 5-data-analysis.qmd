@@ -186,4 +186,4 @@ This can be readily fixed in Biodiverse by specifying a spatial condition to def
 
 To read more on spatially structured randomisations see [this](https://biodiverse-analysis-software.blogspot.com/search?q=structured+randomisation) blog post. 
 
-![](images/image5.14.png)
+![](images/image5.17.png)
