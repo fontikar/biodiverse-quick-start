@@ -58,11 +58,11 @@ Hovering over a tree node highlights the groups containing the node's labels in 
 
 Left-clicking on a branch selects all labels in terminal descendants (single-label nodes) of that node in the tree that are also in the label lists. Any nodes containing a label that is not present in the BaseData will remain black in the tree.
 
-\![\]\[image25\]
+![](images/image4.5.png)
 
 Control-click on a node to display a pop-up window from which you can access lists of the labels, groups and branch characteristics (length, name, etc).
 
-\![\]\[image26\]
+![](images/image4.6.png)
 
 Note the blue vertical sliding bar on the right side of the tree pane. Hovering the mouse over this bar will display three numbers. The first two numbers indicate the quantity and percentage of nodes present to the right of the bar. If the tree is plotted by node depth, the third number indicates the depth at the current bar position. If the plot is by node length, the third number indicates the distance from the bar position to the most distant (left-most) leaf node.
 
@@ -70,7 +70,7 @@ Note the blue vertical sliding bar on the right side of the tree pane. Hovering 
 
 The scree plot is hidden by default but can be dragged up from the bottom of the tree pane. This plot displays a simple graph of the proportion of nodes present to the left of an imaginary vertical line cut through the tree above. Move the mouse toward the bottom of the tree pane until it indicates a bar that you can click on and drag upward to reveal the graph.
 
-\![\]\[image27\]
+![](images/image4.7.png)
 
 ###  Matrix grid 
 
@@ -84,4 +84,4 @@ Click on a single element (cell) to select one pair of labels. The two label lis
 
 You can also click and drag the left mouse button to select a rectangular region in the matrix. This highlights the selected labels in the other panes, adjusting the label lists to reflect the new selection.
 
-\![\]\[image28\]
+![](images/image4.8.png)
