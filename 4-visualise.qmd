@@ -1,14 +1,12 @@
 ---
-title: "Visualising"
+title: "Visualising Data"
 ---
-
-#  Visualising Data 
 
 You can interactively visualise the relationships between the groups and labels once you have imported data or opened a pre-existing data set or project.
 
 To visualise your data, either select the *Basedata-\>View Labels* menu option, or double-click on the basedata object under the Outputs tab. Depending upon which data objects you have imported (e.g. BaseData, Matrix, Tree), a maximum of 5 panes are viewable:
 
-The data visualisation panes
+![](images/image4.0.png)
 
 The panes constitute a linked visualisation system so that the selection (labels, groups, matrix cells or tree nodes) in one pane is reflected in the other panes. If more than one label is contained in the selection in any pane, the groups in the group grid are coloured with a hue of red according to the number of the selected labels they contain (dark red for more, lighter red for less, white for none).
 
@@ -20,7 +18,7 @@ We now describe how each pane works.
 
 Click on any row in the list to highlight a single label. Hold the shift key down to select a contiguous block, and the control key to select (or deselect) non-contiguous labels. The second list is only visible if the project has a selected matrix. The main use for the second list is to be able to select labels from each list to highlight specific cells – or columns of cells – in the matrix pane, if a matrix is currently selected. The first (top) label list represents matrix rows, while the second (bottom) label list represents matrix columns.
 
-\![\]\[image21\]
+![](images/image4.1.png)
 
 Sort the label lists by clicking on the column headers. The default order is by label, in a [natural sort order](https://en.wikipedia.org/wiki/Natural_sort_order). Re-ordering of these lists also re-orders the matrix plot (the upper list will sort the rows, the lower list will sort the columns). The current selection in the lists is updated whenever you select elements in one of the other panes.
 
@@ -40,15 +38,15 @@ Hovering over a group will highlight in bold the nodes in the Tree corresponding
 
 Left-clicking on a group will highlight it in dark red. Other groups may also be highlighted depending on the number of labels they share with the selected group (darker red for more shared labels, lighter red for less, white for no labels in common). Groups will then be highlighted according to the number of labels they have in common with the selected group. Labels in selected groups will also be highlighted in the top label list (although the list does not automatically jump to them). Drawing a box over the grid with the left mouse button selects labels from all the groups in the box, allocating the hue based on the species richness of the selection rather than a single group.
 
-\![\]\[image22\]
+![](images/image4.2.png)
 
 While holding the control key down, click on a group to display a pop-up window that shows you a list of the labels it contains and the sample size in that group for each label. To bring up any group's detailed information without changing current highlighting, use the middle/wheel mouse button to select a group.
 
-\![\]\[image23\]
+![](images/image4.3.png)
 
 Alter the Group Grid zoom level using the three zoom buttons at the left of the pane. For more details about this see [the relevant blog post](https://biodiverse-analysis-software.blogspot.com/2014/10/the-pan-and-zoom-functionality-in.html).
 
-\![\]\[image24\]
+![](images/image4.4.png)
 
 ###  Tree 
 

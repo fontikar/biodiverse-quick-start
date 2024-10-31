@@ -26,7 +26,7 @@ Or click ![](images/image-open.png) on the relevant menu bar.
 Select the file you want to load, and click OK.
 
 ##  Importing data
-BaseData, Matrix, and Tree object data can be imported from ‘raw’ data files (e.g. Tabular text, rasters, shapefiles, spreadsheets or CSV text files in the case of BaseData and Matrix objects) by clicking on their respective import buttons ![](images/image3.2.png) on the main toolbar, or via the ‘Import’ command in their respective menus.
+BaseData, Matrix, and Tree object data can be imported from ‘raw’ data files (e.g. Tabular text, rasters, shapefiles, spreadsheets or CSV text files in the case of BaseData and Matrix objects) by clicking on their respective import buttons ![](images/image-import.png) on the main toolbar, or via the ‘Import’ command in their respective menus.
 
 For BaseData objects, either a new object can be created, or an existing object can be added to. When adding data it is up to the user to ensure the new data are in the same coordinate system (i.e. Biodiverse does not check if you add data in UTM coordinates to a BaseData object using decimal degrees).
 
