@@ -136,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./4-visualise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Visualising</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Visualising Data</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -218,13 +218,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="opening-data" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="opening-data"><span class="header-section-number">4.2</span> Opening data</h2>
 <p>To open pre-existing data (i.e.&nbsp;a Project, BaseData, Matrix or Tree saved to disk), select <em>Open</em> under the desired menu option and then navigate to the relevant file to load it:</p>
-<p>![][image4]<br>
-Or click ![][image5] on the relevant menu bar.</p>
+<p><img src="images/image3.0.png" class="img-fluid"> Or click <img src="images/image-open.png" class="img-fluid"> on the relevant menu bar.</p>
 <p>Select the file you want to load, and click OK.</p>
 </section>
 <section id="importing-data" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="importing-data"><span class="header-section-number">4.3</span> Importing data</h2>
-<p>BaseData, Matrix, and Tree object data can be imported from ‘raw’ data files (e.g.&nbsp;Tabular text, rasters, shapefiles, spreadsheets or CSV text files in the case of BaseData and Matrix objects) by clicking on their respective import buttons ![][image6] on the main toolbar, or via the ‘Import’ command in their respective menus.</p>
+<p>BaseData, Matrix, and Tree object data can be imported from ‘raw’ data files (e.g.&nbsp;Tabular text, rasters, shapefiles, spreadsheets or CSV text files in the case of BaseData and Matrix objects) by clicking on their respective import buttons <img src="images/image-import.png" class="img-fluid"> on the main toolbar, or via the ‘Import’ command in their respective menus.</p>
 <p>For BaseData objects, either a new object can be created, or an existing object can be added to. When adding data it is up to the user to ensure the new data are in the same coordinate system (i.e.&nbsp;Biodiverse does not check if you add data in UTM coordinates to a BaseData object using decimal degrees).</p>
 <section id="basedata" class="level3" data-number="4.3.1">
 <h3 data-number="4.3.1" class="anchored" data-anchor-id="basedata"><span class="header-section-number">4.3.1</span> BaseData</h3>
@@ -272,17 +271,17 @@ Or click ![][image5] on the relevant menu bar.</p>
 </tr>
 </tbody>
 </table>
-<p>Select the import button ![][image6] on the BaseData toolbar (or use menu <em>Basedata&gt;Import</em>) to open the <em>Import Data</em> dialogue window, from where you can select the input data file.</p>
-<p>![][image7]</p>
+<p>Select the import button <img src="images/image-import.png" class="img-fluid"> on the BaseData toolbar (or use menu <em>Basedata&gt;Import</em>) to open the <em>Import Data</em> dialogue window, from where you can select the input data file.</p>
+<p><img src="images/image3.3.png" class="img-fluid"></p>
 <p>The text box at the top right of the <em>Import Data</em> window allows you to name the output BaseData object that will be produced. Once you are finished, click <strong><em>Next</em></strong>.</p>
-<p>![][image8]</p>
+<p><img src="images/image3.4.png" class="img-fluid"></p>
 <p>You will then see the Import Options window with various options you can set for the import:</p>
-<p>![][image9]</p>
+<p><img src="images/image3.5.png" class="img-fluid"></p>
 <p>Details of all the import options are described in <a href="https://github.com/shawnlaffan/biodiverse/wiki/SampleSession#importing-data">Import Options</a>, but leave all of them unchecked for this tutorial, except ‘<em>Skip lines with undef groups</em>’. Checking this option allows you to ignore records where a group field is either undefined or non-numeric. Such records can occur where you do not know the coordinates for a sample, if you choose the wrong column to use for the groups, or if you have a series of lines with no data at the end of a file.</p>
 <p>If you are not importing the <em>Example_site_data.csv</em> file, bear in mind you might need to check some of the other import options. A useful option is ‘<em>Allow empty groups</em>’ which lets you have groups that are considered for analysis, but that have no labels themselves. This is useful when you wish to have moving window analyses extend beyond the sampled data to give a smoother result.</p>
 <p>Click <strong><em>Next</em></strong>.</p>
 <p>The <em>Choose columns</em> dialog box appears and allows you to select various options for each column in your input text file.</p>
-<p>![][image10]</p>
+<p><img src="images/image3.6.png" class="img-fluid"></p>
 <p>You must set a <em>Type</em> value for at least one Group and one Label column, but more than one of each may be chosen.</p>
 <p>All columns in your file that are irrelevant to the analysis should be set to <em>Ignore</em>, as is done for the <strong>num</strong> column in this case.</p>
 <p>Select <em>Label</em> as the <em>Type</em> for the <strong>genus</strong> and <strong>species</strong> columns. This represents genus and species values for each record as one combined label, i.e.&nbsp;‘<em>Genus species</em>’.</p>
@@ -290,27 +289,29 @@ Or click ![][image5] on the relevant menu bar.</p>
 <p>When a Group column has been set you will be given the option to select its cell size (in the same units as the group data is stored) and its origin. If you are not importing the <em>Example_site_data.csv</em> file, make sure these dimensions and units are appropriate to your data. You can specify if the group data are degrees using the <em>Data in degrees?</em> comboboxes. This allows you to import data in degrees minutes seconds (e.g.&nbsp;22° 15’ 10’’ S) and decimal degrees formats, as well as enabling some validation that the coordinate values are in the correct range for such units.</p>
 <p>The Re-order Columns dialog box is the next window to appear. This allows you to order your labels and groups. For example, placing “y” above “x” makes the y column data the first dimension of a group’s coordinates and x the second (useful if latitude precedes longitude in the column order of your input file). If you forget this step then the axis order can be changed later on using the <em>Duplicate with re-ordered axes</em> tool under the BaseData menu.</p>
 <p>Since the columns in <em>Example_site_data.csv</em> are already in the correct order, we will accept the current column ordering. Click <strong><em>OK</em></strong>.</p>
-<p>![][image11]</p>
+<p><img src="images/image3.7.png" class="img-fluid"></p>
 <p>Biodiverse now imports the data from the Example_site_data.csv input file and creates a new BaseData object. Once the import process is complete, the name of the new BaseData object (‘My_new_basedata’ in this case) appears in the top-left of the Biodiverse main window.</p>
 <section id="remap" class="level4" data-number="4.3.1.1">
 <h4 data-number="4.3.1.1" class="anchored" data-anchor-id="remap"><span class="header-section-number">4.3.1.1</span> Remap</h4>
 <p>The option to remap label names will appear after the re-order option.</p>
 <p>The remap process can generate possible matches between spatial data and any tree, matrices, group properties and label properties automatically. While this section is focused on importing BaseData, any object can have its element names remapped during or after import, with the latter accessed through the Basedata, Tree and Matrix menus as appropriate. The centralised interface for automatic remaps can be accessed under the file menu, as below. There are panes listing exact matches, non-matches (i.e.&nbsp;differences were too great), punctuation matches and possible typos. Users can choose to ignore any of these sets, and also select subsets within the sets if, for example, there are false matches. See the <a href="https://biodiverse-analysis-software.blogspot.com/4/matching-spatial-tree-matrix-and.html">blog for further remap information and examples</a>.</p>
-<p>Since we are just importing example base data we will not remap so choose “no”.![][image12]</p>
+<p>Since we are just importing example base data we will not remap so choose “no”.</p>
+<p><img src="images/image3.8.png" class="img-fluid"></p>
 <p>Having imported data into a BaseData object, you are now ready to run cluster, moving window and randomisation analyses, or you can <strong>visualise</strong> this data (see <a href="#heading=h.ojhp">Visualising Data</a>) or calculate a <strong>spatial index</strong> (see <a href="#heading=h.3as4poj">Building a Spatial Index</a>) which helps run faster analyses when using this BaseData. Alternatively, you can now import additional data files (see importing <a href="#.2-matrices">Matrices</a> and <a href="#heading=h.10tw">Trees</a> below).</p>
-<p>However, prior to doing anything else, it is a good idea to <strong>Save</strong> your newly imported data. Use the <em>File &gt; Save</em> menu option to save the whole project. To save just the BaseData select the My_new_basedata object, and save it as a BaseData object, either via the <em>Basedata</em> menu (<em>Basedata</em> &gt; <em>Save as</em>) or the ![][image13] icon on the Basedata toolbar.</p>
+<p>However, prior to doing anything else, it is a good idea to <strong>Save</strong> your newly imported data. Use the <em>File &gt; Save</em> menu option to save the whole project. To save just the BaseData select the My_new_basedata object, and save it as a BaseData object, either via the <em>Basedata</em> menu (<em>Basedata</em> &gt; <em>Save as</em>) or the <img src="images/image-save.png" class="img-fluid"> icon on the Basedata toolbar.</p>
 </section>
 </section>
 <section id="matrices" class="level3" data-number="4.3.2">
 <h3 data-number="4.3.2" class="anchored" data-anchor-id="matrices"><span class="header-section-number">4.3.2</span> Matrices</h3>
 <p>Matrix data can be imported at any time, although it can only be viewed with an existing (and selected) BaseData object. Currently only delimited text files can be imported (e.g.&nbsp;csv or txt files).</p>
 <p>Remember that these matrices are not site by species matrices. These are matrices of numeric values representing some relationship between pairs of labels or groups, for example numbers of base pairs shared between pairs of labels. Site by species data are imported using the basedata import process.</p>
-<p>Select the import button ![][image6] on the Matrix toolbar to open the Import Matrix dialogue window, from where you can select the input data file. Select <em>Example_matrix.txt</em>, give the new Matrix a name if you like, and click <strong><em>OK</em></strong>.</p>
-<p>![][image14]</p>
+<p>Select the import button <img src="images/image-import.png" class="img-fluid"> on the Matrix toolbar to open the Import Matrix dialogue window, from where you can select the input data file. Select <em>Example_matrix.txt</em>, give the new Matrix a name if you like, and click <strong><em>OK</em></strong>.</p>
+<p><img src="images/image3.9.png" class="img-fluid"></p>
 <p>After deciding if your matrix input file format is normal or sparse, you must now decide how the columns in the matrix file should be read. You must select at least one label column, and <strong>only one</strong> “<em>Matrix start</em>” column. Any other columns in the file should be set to “<em>Ignore</em>”.</p>
-<p>![][image15]</p>
+<p><img src="images/image3.10.png" class="img-fluid"></p>
 <p>Click Ok, then select No when prompted to <em>Remap element names and set include/exclude?</em> The matrix is imported and appears in the drop-down menu in the matrix toolbar at the top of the screen.</p>
-<p>The matrix can only be visualised once a BaseData object has been imported and visualised as well. (it will only produce a useful display if the matrix and BaseData share at least some labels).![][image16]</p>
+<p>The matrix can only be visualised once a BaseData object has been imported and visualised as well. (it will only produce a useful display if the matrix and BaseData share at least some labels).</p>
+<p><img src="images/image3.11.png" class="img-fluid"></p>
 <p>Note that you can either save the matrix as a Matrix <em>.bms</em> object (‘<em>Matrices &gt; Save as</em>’ from the menu), or it can be saved as part of a Project see <a href="#-saving-a-project">Saving a Project</a> at the end of this guide.</p>
 </section>
 <section id="trees" class="level3" data-number="4.3.3">
@@ -322,16 +323,17 @@ Or click ![][image5] on the relevant menu bar.</p>
 </ol>
 <p>In both cases, a Tree can only be visualised with an existing BaseData object. A Tree is most useful if it shares some labels with the BaseData being displayed.</p>
 <p><strong>Importing a Tree</strong> A Tree can be imported from nexus (*.nex or *.tre), newick, “R json” or tabular formats. Once a tree is imported, it will be added to the project.<br>
-To import a Tree, select the import button ![][image6] on the Tree toolbar. A window will appear asking if your tree data are in a tabular format. After selecting YES or NO, you can select your file:</p>
-<p>![][image17]</p>
+To import a Tree, select the import button <img src="images/image-import.png" class="img-fluid"> on the Tree toolbar. A window will appear asking if your tree data are in a tabular format. After selecting YES or NO, you can select your file:</p>
+<p><img src="images/image3.12.png" class="img-fluid"></p>
 <p>Select your file and click <strong><em>OK</em></strong>. You will then have the option of choosing a label remap file. This is often needed so the node names match the relevant BaseData labels (see FAQ page: <a href="https://github.com/shawnlaffan/biodiverse/wiki/FAQ#my-phylogenetic-analyses-have-empty-results">My phylogenetic analyses have empty results</a>). In many cases a phylogenetic tree will have labels like “genus_species”, but if you imported data from a file that has genus and species in separate columns then the labels will look like “genus:species”, which will not match. This is where remapping is needed.</p>
-<p>![][image18]</p>
+<p><img src="images/image3.13.png" class="img-fluid"></p>
 <p>Since we are using the example input data, we will remap (but if you don’t wish to remap labels, simply click <strong><em>Cancel</em></strong> and the system will import the tree).</p>
 <p>To remap the tree labels using an existing file, click <strong><em>YES</em></strong>. You are prompted to select a remap “label Source”. Here we use “user derived file” to select our <em>Example_tree_remap.txt</em> file. Click <strong><em>OK</em></strong>, accept the column separator and quote defaults, click <strong><em>Next</em></strong>.</p>
-<p>![][image19]</p>
+<p><img src="images/image3.14.png" class="img-fluid"></p>
 <p>A popup dialog now prompts you to specify the column types for the remap process. Specify as many <em>input_element</em> columns as the tree labels have (i.e.&nbsp;one for nexus files) and then each label column in the BaseData object must be designated as a <em>remapped_element</em>. Click <strong><em>OK</em></strong>. The system will import the tree and perform the remapping.</p>
-<p>![][image20]</p>
+<p><img src="images/image3.15.png" class="img-fluid" style="width:80.0%"></p>
 <p><strong>Deriving a Tree</strong> You can derive a Tree from a BaseData object or Matrix at any time. Select the “<em>Create tree from labels</em>” or “<em>Convert matrix to tree</em>” options under the BaseData and Matrix menus, respectively:</p>
+<p><img src="images/image3.16.png" class="img-fluid"></p>
 <p>When generating a tree from the BaseData labels, labels are treated as taxonomic names, and thus are useful if the labels have at least two components (e.g.&nbsp;genus and species). A tree generated from a matrix is simply a cluster analysis using the average linkage function, so will only be valid for dissimilarity matrices.</p>
 
 
@@ -766,8 +768,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./4-visualise.html" class="pagination-link" aria-label="Visualising">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Visualising</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./4-visualise.html" class="pagination-link" aria-label="Visualising Data">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Visualising Data</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
