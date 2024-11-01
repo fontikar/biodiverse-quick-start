@@ -114,7 +114,7 @@
     "href": "3-import.html",
     "title": "4  Importing Data",
     "section": "",
-    "text": "4.1 Data structures\nBefore importing data it is important to understand the sorts of data supported by Biodiverse. There are four main types, each of which can be stored in native Biodiverse format[^1].\nProjects – (file extension .bps) are a composite structure and may consist of a set of any number of BaseData, Tree and Matrix objects and any associated analysis results. These are only used by the GUI.\nBaseData – (file extension .bds) is the primary storage object used in Biodiverse. BaseData stores your spatial data (e.g. different species and their XY locations), a set of analysis parameters, and any associated outputs from cluster, moving window and/or randomisation analyses.\nTrees – (file extension .bts) these are hierarchical tree structures, e.g. phylogenies, taxonomies or word roots, which are imported from nexus and similar formats. These are used for analyses involving tree structures, e.g. phylogenetic diversity, linked by the matching labels in a BaseData.\nMatrices – (file extension .bms) these are matrices of numeric values representing some relationship between pairs of labels or groups. These are used for analyses involving matrix structures linked by the matching labels in a BaseData. They are also used as part of cluster analyses, in which case they relate to pairs of groups in a BaseData object.",
+    "text": "4.1 Data structures\nBefore importing data it is important to understand the sorts of data supported by Biodiverse. There are four main types, each of which can be stored in native Biodiverse format.\nProjects – (file extension .bps) are a composite structure and may consist of a set of any number of BaseData, Tree and Matrix objects and any associated analysis results. These are only used by the GUI.\nBaseData – (file extension .bds) is the primary storage object used in Biodiverse. BaseData stores your spatial data (e.g. different species and their XY locations), a set of analysis parameters, and any associated outputs from cluster, moving window and/or randomisation analyses.\nTrees – (file extension .bts) these are hierarchical tree structures, e.g. phylogenies, taxonomies or word roots, which are imported from nexus and similar formats. These are used for analyses involving tree structures, e.g. phylogenetic diversity, linked by the matching labels in a BaseData.\nMatrices – (file extension .bms) these are matrices of numeric values representing some relationship between pairs of labels or groups. These are used for analyses involving matrix structures linked by the matching labels in a BaseData. They are also used as part of cluster analyses, in which case they relate to pairs of groups in a BaseData object.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Importing Data</span>"
     ]
@@ -224,7 +224,7 @@
     "href": "8-acknowledgements.html",
     "title": "9  Acknowledgements",
     "section": "",
-    "text": "Dr Israel Borokini provided very useful comments to clarify the document\n[1]: Details of the format used are in this blog post: https://biodiverse-analysis-software.blogspot.com/2016/08/new-more-efficient-file-format.html",
+    "text": "Dr Israel Borokini provided very useful comments to clarify the document content.",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Acknowledgements</span>"
     ]
