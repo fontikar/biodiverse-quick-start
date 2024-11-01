@@ -6,7 +6,7 @@ Note: If all your files are in the same location then you can set the working di
 
 ## Data structures
 
-Before importing data it is important to understand the sorts of data supported by Biodiverse. There are four main types, each of which can be stored in native Biodiverse format\[\^1\].
+Before importing data it is important to understand the sorts of data supported by Biodiverse. There are four main types, each of which can be stored in [native Biodiverse format](https://biodiverse-analysis-software.blogspot.com/2016/08/new-more-efficient-file-format.html).
 
 [**Projects**](https://github.com/shawnlaffan/biodiverse/wiki/DataStructures#projects) – (file extension **.bps**) are a composite structure and may consist of a set of any number of BaseData, Tree and Matrix objects and any associated analysis results. These are only used by the GUI.
 
