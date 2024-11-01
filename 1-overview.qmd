@@ -36,11 +36,11 @@ You can also send questions to the Biodiverse discussion forum at [https://githu
 
 The two concepts below are important when using Biodiverse. For details of a fuller list of Biodiverse terminology, see the [Data Structures](https://github.com/shawnlaffan/biodiverse/wiki/DataStructures) page. 
 
-### .1 Labels 
+### Labels 
 
 Typically labels represent species, but in reality they can be any named entity that is then aggregated, or ‘binned’, into a [Group](#.2-groups). Hence, an individual label could also represent other taxonomic levels, e.g. a genus, or distinct entities from other phenomena, such as lithological classes (e.g. different rock types) or linguistic structures (e.g. different phonemes).
 
-### .2 Groups 
+### Groups 
 
 Groups are cells into which the labels are aggregated (binned). These are usually square, but can represent any number of axes (x, y, z, time, population-ID, …) with differing cell sizes (resolutions) and numeric or text types. The groups are plotted in the interactive maps that Biodiverse produces as outputs of data visualisation and spatial analyses, as in the example below. Groups are also integral to the spatial components of the moving window, cluster and randomisation analyses. 
 
